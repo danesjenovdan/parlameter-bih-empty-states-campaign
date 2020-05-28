@@ -38,13 +38,17 @@
       </div>
     </div>
     <JumboTwo />
+    <JumboThree />
+    <JumboFour />
   </div>
 </template>
 
 <script>
 import JumboTwo from '../components/JumboTwo'
+import JumboThree from '../components/JumboThree'
+import JumboFour from '../components/JumboFour'
 export default {
-  components: { JumboTwo },
+  components: { JumboFour, JumboThree, JumboTwo },
   data() {
       return {
         form: {
@@ -85,7 +89,7 @@ export default {
 .container-main {
   margin: 0 auto;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .header {
   height: 70px;

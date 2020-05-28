@@ -1,6 +1,6 @@
 <template>
   <div class="container-c flex flex--column flex-justify--center flex-align--center">
-    <div class="mt64 text--center wrapper flex flex--column flex-justify--center flex-align--center">
+    <div class="mt64 mb64 text--center wrapper flex flex--column flex-justify--center flex-align--center">
       <span class="text--bold text--italic text--uppercase title">ZAŠTO JE OTVARANJE PARLAMENATA VAŽNO?</span>
       <div class="card-wrapper flex flex-align--center flex-justify--space-between mt24">
         <Card>
@@ -57,7 +57,7 @@
   width: 100%;
 }
 .title {
-  font-size: 45px;
+  font-size: $font-size-title;
   font-weight: 500;
   text-align: center;
   @media (max-width: $small) {
@@ -73,6 +73,5 @@
     width: 100%;
     flex-wrap: wrap;
   }
-
 }
 </style>
