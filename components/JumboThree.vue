@@ -4,9 +4,7 @@
       <span class="title text--italic">KOJI PODACI NEDOSTAJU?</span>
       <div class="subtitle-wrapper">
         <span class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          U svim institucijama nedostaje
         </span>
       </div>
       <div class="flex flex-justify--center mt24 card-wrapper">
@@ -17,27 +15,28 @@
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
             Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i
-            evaluaciju rada,kao i drugih dokumenata od društvenog značaja
+            evaluaciju rada,kao i drugih dokumenata od društvenog značaja.
           </span>
         </Card>
         <Card>
           <span class="mt24 card-title text--center">
-            Proaktivno objavljivanje dokumenata
+            Mašinski čitljivi dokumenti
           </span>
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
-            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i
-            evaluaciju rada,kao i drugih dokumenata od društvenog značaja
+            Dokumenti koje je moguće pronaći na zvaničnim stranicama parlamenta, uglavnom nisu objavljeni
+            u poluotvorenom ili otvorenom formatu.
           </span>
         </Card>
         <Card>
           <span class="mt24 card-title text--center">
-            Proaktivno objavljivanje dokumenata
+            Automatsko ažuriranje podataka
           </span>
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
-            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i
-            evaluaciju rada,kao i drugih dokumenata od društvenog značaja
+            Podaci parlamenata u BiH nisu otvoreni i ne potiču razvoj novih, sličnih ili od Parlametra drugačijih
+            aplikacija. Podatke preuzete sa službenih stranica parlamenata često treba dodatno provjeravati,
+            nadopunjavati pa i ručno unositi jer nije omogućeno strojno preuzimanje i automatsko ažuriranje podataka.
           </span>
         </Card>
       </div>

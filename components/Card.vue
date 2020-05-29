@@ -24,7 +24,7 @@
   align-items: center;
   min-height: 450px;
   width: 30%;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   @media (max-width: $small) {
     width: 100%;

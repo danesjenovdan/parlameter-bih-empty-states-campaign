@@ -40,6 +40,8 @@
     <JumboTwo />
     <JumboThree />
     <JumboFour />
+    <!-- CONTACT -->
+    <ProgressBar />
   </div>
 </template>
 
@@ -47,8 +49,9 @@
 import JumboTwo from '../components/JumboTwo'
 import JumboThree from '../components/JumboThree'
 import JumboFour from '../components/JumboFour'
+import ProgressBar from "../components/ProgressBar";
 export default {
-  components: { JumboFour, JumboThree, JumboTwo },
+  components: {ProgressBar, JumboFour, JumboThree, JumboTwo },
   data() {
       return {
         form: {
@@ -138,12 +141,14 @@ export default {
     width: 27%;
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap:wrap;
     align-content: center;
     text-align: center;
     min-height: 200px;
-    padding: 5px;
+    padding: 10px;
+
 
     &__title {
       font-size: 50px;

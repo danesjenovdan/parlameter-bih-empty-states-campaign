@@ -1,10 +1,11 @@
 <template>
   <div class="container-main">
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24">
-      <div class="text-wrapper text--center">
+      <div class="text-wrapper text--center mt24 mb24">
         <span class="subsubtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.
+          Lako postoje različitosti kada je u pitanju objavljivanje dokumenata na zvaničnim stranicama zakonodavnih
+            institucija u BiH, ono što je zajedničko svim parlamentima jeste uskraćivanje informacija o sjednicama
+            kolegija te radnih tijela ovih organa vlast.
         </span>
       </div>
       <div class="tab-wrapper mt24">
@@ -15,7 +16,7 @@
         <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
       </div>
       <div class="text-wrapper mt32">
-        <p class="subsubtitle">Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
+        <p class="subsubtitle"> Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
         <p class="subsubtitle" >Prisustva zastupnika</p>
         <p class="subsubtitle">Obraćanja zastupnika</p>
         <p class="subsubtitle">Sjednice kolegija</p>
@@ -143,6 +144,8 @@ za korištenje.
   &__text {
     margin-top: 5px;
     margin-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
   }
   &__item {
     width: 80%;
@@ -152,6 +155,8 @@ za korištenje.
     font-size: 2rem;
     color: #ffffff;
     font-style: italic;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
 
     &--left {
       justify-content: flex-end;
@@ -171,5 +176,13 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
 
+}
+
+li:before {
+  content: "-->";
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
 }
 </style>
