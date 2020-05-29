@@ -40,7 +40,8 @@
     <JumboTwo />
     <JumboThree />
     <JumboFour />
-    <!-- CONTACT -->
+    <PetitionForm />
+    <JumboFive />
     <ProgressBar />
   </div>
 </template>
@@ -49,9 +50,11 @@
 import JumboTwo from '../components/JumboTwo'
 import JumboThree from '../components/JumboThree'
 import JumboFour from '../components/JumboFour'
+import PetitionForm from "../components/PetitionForm";
+import JumboFive from "../components/JumboFive";
 import ProgressBar from "../components/ProgressBar";
 export default {
-  components: {ProgressBar, JumboFour, JumboThree, JumboTwo },
+  components: {ProgressBar, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
   data() {
       return {
         form: {
@@ -141,14 +144,12 @@ export default {
     width: 27%;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap:wrap;
     align-content: center;
     text-align: center;
     min-height: 200px;
-    padding: 10px;
-
+    padding: 5px;
 
     &__title {
       font-size: 50px;
