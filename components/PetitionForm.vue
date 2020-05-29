@@ -15,6 +15,7 @@
                          :class="{ email , error: !email.valid }"
                          v-model="email.value">
               </div>
+
               <label class="label">Odaberite parlament</label>
 
               <div>
