@@ -42,6 +42,7 @@
     <JumboFour />
     <PetitionForm />
     <JumboFive />
+    <JumboSix />
   </div>
 </template>
 
@@ -51,8 +52,9 @@ import JumboThree from '../components/JumboThree'
 import JumboFour from '../components/JumboFour'
 import PetitionForm from "../components/PetitionForm";
 import JumboFive from "../components/JumboFive";
+import JumboSix from '../components/JumboSix'
 export default {
-  components: {JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
+  components: { JumboSix, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
   data() {
       return {
         form: {
