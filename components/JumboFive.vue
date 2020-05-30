@@ -1,15 +1,21 @@
 <template>
     <div class="container-c flex flex-justify--center flex-align--center">
 
-    <div class="mb64 mt64 flex flex--column flex-align--center flex-justify--center">
-        <span class="title" style="font-weight: 100">Potpiši - jer imamo pravo znati</span>
+    <div class="mb64 mt64 flex flex--column flex-align--center flex-justify--center p32">
+      <span class="title-custom">We need 5000 signatures to send this letter to Sabor. </span>
+      <ProgressBar width="50" class="mt16"/>
+      <div class="flex flex-align--center flex-justify--flex-end counter">
+        <span>976 / 5000</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+    import ProgressBar from './ProgressBar'
     export default {
-        name: "JumboFive"
+        name: "JumboFive",
+      components: { ProgressBar }
     }
 </script>
 
@@ -42,5 +48,13 @@
     width: 100%;
     flex-wrap: wrap;
   }
+}
+.counter {
+  width: 100%;
+}
+
+.title-custom {
+  font-size: 30px;
+  font-weight: 300;
 }
 </style>

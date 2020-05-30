@@ -90,7 +90,7 @@ za korištenje.
     </div>
     <div class="separator separator--left">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">POTPIŠIE PETICIJU!</span>
+        <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>
       </div>
     </div>
   </div>
@@ -121,6 +121,9 @@ za korištenje.
 }
 .text-wrapper {
   width: 50%;
+  @media (max-width: $small) {
+    width: 90%;
+  }
 }
 .tab-wrapper {
   display: flex;
@@ -143,6 +146,9 @@ za korištenje.
   &__text {
     margin-top: 5px;
     margin-bottom: 5px;
+    @media (max-width: $small) {
+      font-size: 1rem;
+    }
   }
   &__item {
     width: 80%;
