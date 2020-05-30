@@ -1,29 +1,31 @@
 <template>
-    <div style="width: 60%; margin: auto; background-color: white;">
-        <div class="progress"
-                style="background-color: green;"
-                :style="{width: progressBar + '%'}">
-            {{ progressBar }}
-        </div>
-    </div>
+  <div class="progress">
+    <div class="progress__bar" :style="{ width: width + '%' }"></div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "ProgressBar",
-        data(){
-            return {
-                progressBar: 100
-            }
-        }
+export default {
+  name: 'ProgressBar',
+  props: {
+    width: {
+      type: Number,
+      default: 30
     }
+  }
+}
 </script>
 
 <style scoped lang="scss">
-    .progress{
-        height: 40px;
-        background-color: #eee;
-        margin: auto;
-        transition: width 500ms;
-    }
+.progress {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #7786ea;
+  border-radius: 10px;
+
+  &__bar {
+    background-color: #7786ea;
+  }
+}
 </style>

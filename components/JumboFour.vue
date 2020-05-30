@@ -1,11 +1,10 @@
 <template>
   <div class="container-main">
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24">
-      <div class="text-wrapper text--center mt24 mb24">
+      <div class="text-wrapper text--center">
         <span class="subsubtitle">
-          Lako postoje različitosti kada je u pitanju objavljivanje dokumenata na zvaničnim stranicama zakonodavnih
-            institucija u BiH, ono što je zajedničko svim parlamentima jeste uskraćivanje informacija o sjednicama
-            kolegija te radnih tijela ovih organa vlast.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.
         </span>
       </div>
       <div class="tab-wrapper mt24">
@@ -16,11 +15,13 @@
         <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
       </div>
       <div class="text-wrapper mt32">
-        <p class="subsubtitle"> Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
-        <p class="subsubtitle" >Prisustva zastupnika</p>
+        <p class="subsubtitle">Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
+        <p class="subsubtitle">Prisustva zastupnika</p>
         <p class="subsubtitle">Obraćanja zastupnika</p>
         <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela </p>
+        <p class="subsubtitle">
+          Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+        </p>
       </div>
     </div>
     <div class="separator separator--left">
@@ -33,21 +34,25 @@
         <li>Ko je glasao za, a ko protiv.</li>
         <li>Kako se glasalo o amandmanima na zakone i državni/entitetskI budžet.</li>
         <li>Šta se događa u radnim tijelima parlamenata i kako se glasa na tim sjednicama?</li>
-        <li>Šta se događa na sjednicama Kolegija? </li>
+        <li>Šta se događa na sjednicama Kolegija?</li>
         <li>Funkcionalne e-mail adrese na koje se možemo obratiti zastupnicima/cama.</li>
       </ul>
     </div>
 
     <div class="separator separator--right">
       <div class="separator__item separator__item--right">
-        <span class="mr8 text--uppercase separator__text">TRAŽITE POTPUNO OTVARANJE DRŽAVNOG I ENTITETSKIH PARLAMENATA</span>
+        <span class="mr8 text--uppercase separator__text"
+          >TRAŽITE POTPUNO OTVARANJE DRŽAVNOG I ENTITETSKIH PARLAMENATA</span
+        >
       </div>
     </div>
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
       <div class="text-wrapper text--left">
         <span class="subsubtitle">
-          Nove tehnologije omogućavaju brzu razmjenu informacija i bh. parlamenti imaju odgovornost koristiti ih da javnosti ponude službene i provjerene informacije nasuprot dezinformacijama, slobodnim interpretacijama i društvenim mrežama. Ipak, umjesto otvaranja podataka, bh. parlamenti ili ne objavljuju nikako dokumente ili ih objavljuju u neadekvatnim elektronskim formatima.
-
+          Nove tehnologije omogućavaju brzu razmjenu informacija i bh. parlamenti imaju odgovornost koristiti ih da
+          javnosti ponude službene i provjerene informacije nasuprot dezinformacijama, slobodnim interpretacijama i
+          društvenim mrežama. Ipak, umjesto otvaranja podataka, bh. parlamenti ili ne objavljuju nikako dokumente ili ih
+          objavljuju u neadekvatnim elektronskim formatima.
         </span>
       </div>
     </div>
@@ -61,58 +66,55 @@
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
       <div class="text-wrapper text--left mb64">
         <span class="subsubtitle">
-Veća vidljivost i preglednije praćenje aktivnosti svakog pojedinog zastupnika i zastupnice u bh. parlamentima povećala bi i njihov osjećaj odgovornosti prema biračicama i biračima i njihovu predanost javnom interesu. Tako bi parlamenti možda mogli popraviti i svoj rejting, koji je već godinama pri dnu ljestvice povjerenja građanstva u zakonodavne institucije.
-<br>
-Kao predstavnička tijela građanki i građana, parlamenti bi trebali predvoditi u korištenju novih tehnologija za veću otvorenost, pristupačnost i neposrednije uključivanje građanstva u procese donošenja odluka.
-
+          Veća vidljivost i preglednije praćenje aktivnosti svakog pojedinog zastupnika i zastupnice u bh. parlamentima
+          povećala bi i njihov osjećaj odgovornosti prema biračicama i biračima i njihovu predanost javnom interesu. Tako
+          bi parlamenti možda mogli popraviti i svoj rejting, koji je već godinama pri dnu ljestvice povjerenja
+          građanstva u zakonodavne institucije.
+          <br />
+          Kao predstavnička tijela građanki i građana, parlamenti bi trebali predvoditi u korištenju novih tehnologija za
+          veću otvorenost, pristupačnost i neposrednije uključivanje građanstva u procese donošenja odluka.
         </span>
       </div>
       <div class="text-wrapper text--center mb64">
         <span class="subtitle">
-          Vjeruju li naše zastupnice i zastupnici
-da nas zapravo ne zanima šta rade,
-kako i kakve odluke donose u naše ime?
-          <br>
-          <br>
+          Vjeruju li naše zastupnice i zastupnici da nas zapravo ne zanima šta rade, kako i kakve odluke donose u naše
+          ime?
+          <br />
+          <br />
           Dokažimo im suprotno!
-          <br>
-          <br>
+          <br />
+          <br />
         </span>
         <span class="subtitle text--italic">
-          Recite Parlamentarnoj skupštini Bosne i
-Hercegovine, Parlamentu Federacije BiH i
-Narodnoj skupštini Republike Srpske
-da je važno da otvore svoje podatke
- tako da budu što brže dostupni i spremni
-za korištenje.
+          Recite Parlamentarnoj skupštini Bosne i Hercegovine, Parlamentu Federacije BiH i Narodnoj skupštini Republike
+          Srpske da je važno da otvore svoje podatke tako da budu što brže dostupni i spremni za korištenje.
         </span>
         <span></span>
       </div>
     </div>
     <div class="separator separator--left">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">POTPIŠIE PETICIJU!</span>
+        <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-  import Tab from './Tab'
-  export default {
-    name: 'JumboFour',
-    components: { Tab },
-    data() {
-      return {
-        selected: 1
-      }
+import Tab from './Tab'
+export default {
+  name: 'JumboFour',
+  components: { Tab },
+  data() {
+    return {
+      selected: 1
     }
   }
+}
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/style/variables";
+@import '@/assets/style/variables';
 
 .container-c {
   width: 100%;
@@ -122,6 +124,9 @@ za korištenje.
 }
 .text-wrapper {
   width: 50%;
+  @media (max-width: $small) {
+    width: 90%;
+  }
 }
 .tab-wrapper {
   display: flex;
@@ -144,8 +149,9 @@ za korištenje.
   &__text {
     margin-top: 5px;
     margin-bottom: 5px;
-      padding-right: 5px;
-      padding-left: 5px;
+    @media (max-width: $small) {
+      font-size: 1rem;
+    }
   }
   &__item {
     width: 80%;
@@ -155,8 +161,6 @@ za korištenje.
     font-size: 2rem;
     color: #ffffff;
     font-style: italic;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
 
     &--left {
       justify-content: flex-end;
@@ -175,14 +179,5 @@ li {
   list-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
-
-}
-
-li:before {
-  content: "-->";
-  font-size: 6px;
-  position: absolute;
-  top: 5px;
-  left: -10px;
 }
 </style>

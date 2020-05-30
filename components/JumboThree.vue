@@ -4,7 +4,9 @@
       <span class="title text--italic">KOJI PODACI NEDOSTAJU?</span>
       <div class="subtitle-wrapper">
         <span class="subtitle">
-          U svim institucijama nedostaje
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
         </span>
       </div>
       <div class="flex flex-justify--center mt24 card-wrapper">
@@ -14,29 +16,28 @@
           </span>
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
-            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i
-            evaluaciju rada,kao i drugih dokumenata od društvenog značaja.
+            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
+            rada,kao i drugih dokumenata od društvenog značaja
           </span>
         </Card>
         <Card>
           <span class="mt24 card-title text--center">
-            Mašinski čitljivi dokumenti
+            Proaktivno objavljivanje dokumenata
           </span>
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
-            Dokumenti koje je moguće pronaći na zvaničnim stranicama parlamenta, uglavnom nisu objavljeni
-            u poluotvorenom ili otvorenom formatu.
+            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
+            rada,kao i drugih dokumenata od društvenog značaja
           </span>
         </Card>
         <Card>
           <span class="mt24 card-title text--center">
-            Automatsko ažuriranje podataka
+            Proaktivno objavljivanje dokumenata
           </span>
           <Divider class="mt24" />
           <span class="text--center card-subtitle mt24">
-            Podaci parlamenata u BiH nisu otvoreni i ne potiču razvoj novih, sličnih ili od Parlametra drugačijih
-            aplikacija. Podatke preuzete sa službenih stranica parlamenata često treba dodatno provjeravati,
-            nadopunjavati pa i ručno unositi jer nije omogućeno strojno preuzimanje i automatsko ažuriranje podataka.
+            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
+            rada,kao i drugih dokumenata od društvenog značaja
           </span>
         </Card>
       </div>
@@ -45,22 +46,21 @@
 </template>
 
 <script>
-  import Card from './Card'
-  import Divider from './Divider'
-  export default {
-    name: 'JumboThree',
-    components: { Divider, Card }
-  }
+import Card from './Card'
+import Divider from './Divider'
+export default {
+  name: 'JumboThree',
+  components: { Divider, Card }
+}
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/style/variables";
+@import '@/assets/style/variables';
 
 .container-c {
   width: 100%;
   background-image: linear-gradient(-224deg, #f2db7c 0%, #f6f1de 100%);
 }
-
 
 .subtitle-wrapper {
   width: 50%;

@@ -2,7 +2,7 @@
   <div class="container-main">
     <div class="header flex flex-justify--space-evenly flex-align--center flex--column mt4">
       <div class="header__container flex flex-justify--space-between flex-align--center">
-        <img class="header__logo" src="@/assets/svg/logo.svg">
+        <img class="header__logo" src="@/assets/svg/logo.svg" />
         <div class="header__texts flex flex-justify--space-between">
           <span>Why?</span>
           <span>Which?</span>
@@ -14,7 +14,8 @@
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
       <div class="text--center jumbotron-first__title mt32">
         <span class="text--center">
-          Prema <span class="text--underline">istraživanju otvorenosti</span> institucija zakonodavne vlasti u regionu, Parlamenti u BiH zauzimaju posljednje mjesto.
+          Prema <span class="text--underline">istraživanju otvorenosti</span> institucija zakonodavne vlasti u regionu,
+          Parlamenti u BiH zauzimaju posljednje mjesto.
         </span>
       </div>
       <div class="jumbotron-first__card-container mt40 mb40">
@@ -33,7 +34,8 @@
       </div>
       <div class="text--center jumbotron-first__title mb32">
         <span class="text--center">
-          Vrijeme je da <span class="text--bold">zakonodavne vlasti u BiH</span> ulože napore kako bi <span class="text--bold">unaprijedile svoju otvorenost!</span>
+          Vrijeme je da <span class="text--bold">zakonodavne vlasti u BiH</span> ulože napore kako bi
+          <span class="text--bold">unaprijedile svoju otvorenost!</span>
         </span>
       </div>
     </div>
@@ -42,7 +44,9 @@
     <JumboFour />
     <PetitionForm />
     <JumboFive />
-    <ProgressBar />
+    <JumboSix />
+    <JumboSeven />
+    <JumboEight />
   </div>
 </template>
 
@@ -50,48 +54,17 @@
 import JumboTwo from '../components/JumboTwo'
 import JumboThree from '../components/JumboThree'
 import JumboFour from '../components/JumboFour'
-import PetitionForm from "../components/PetitionForm";
-import JumboFive from "../components/JumboFive";
-import ProgressBar from "../components/ProgressBar";
+import PetitionForm from '../components/PetitionForm'
+import JumboFive from '../components/JumboFive'
+import JumboSix from '../components/JumboSix'
+import JumboSeven from '../components/JumboSeven'
+import JumboEight from '../components/JumboEight'
 export default {
-  components: {ProgressBar, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
-  data() {
-      return {
-        form: {
-          email: '',
-          name: '',
-          checked: []
-        },
-        show: true,
-        value: 976,
-        max: 5000,
-        signatures: ['John Doe', 'Johnina Doe']
-      }
-    },
-    methods: {
-      onSubmit(evt) {
-        evt.preventDefault();
-        alert(JSON.stringify(this.form))
-      },
-      //IN CASE OF RESETING THE FORM
-      onReset(evt) {
-        evt.preventDefault();
-        this.form.email = '';
-        this.form.name = '';
-        this.form.food = null;
-        this.form.checked = [];
-        this.show = false;
-        this.$nextTick(() => {
-          this.show = true
-        })
-      }
-    }
+  components: { JumboEight, JumboSeven, JumboSix, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo }
 }
 </script>
 
 <style lang="scss" scoped>
-
-
 .container-main {
   margin: 0 auto;
   min-height: 100vh;
@@ -151,11 +124,13 @@ export default {
     min-height: 200px;
     padding: 5px;
 
+
     &__title {
       font-size: 50px;
       font-weight: bold;
       font-style: italic;
     }
+
     &__subtitle {
       font-size: 20px;
     }
