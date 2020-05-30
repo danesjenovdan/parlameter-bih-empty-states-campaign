@@ -1,19 +1,19 @@
 <template>
-  <div class="tab" :class="{'tab--active': active}" @click="$emit('click')">
+  <div class="tab" :class="{ 'tab--active': active }" @click="$emit('click')">
     <slot />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Tab',
-    props: {
-      active: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  name: 'Tab',
+  props: {
+    active: {
+      type: Boolean,
+      default: false
     }
   }
+}
 </script>
 
 <style scoped lang="scss">

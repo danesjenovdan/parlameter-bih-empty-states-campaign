@@ -6,20 +6,31 @@
       </div>
       <div class="fading-text">
         <span>
-          Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek,
+          Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha
+          Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
+          Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec,
+          Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
+          Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec,
+          Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
+          Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec,
+          Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
+          Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec,
+          Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
+          Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec,
+          Miha Pavliha, Marija Robnik, Simona Vezovšek,
         </span>
       </div>
       <div class="button-wrapper">
-        <button class="custom-button">Show all signatures</button>
+        <button class="custom-button text--uppercase">Show all signatures</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'JumboSix'
-  }
+export default {
+  name: 'JumboSix'
+}
 </script>
 
 <style scoped lang="scss">
@@ -50,7 +61,12 @@
   height: 100%;
   width: 100%;
   content: '';
-  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
   pointer-events: none; /* so the text is still selectable */
 }
 
@@ -71,7 +87,7 @@ button {
   position: relative;
   width: 100%;
   text-align: center;
-  top: -80px;
+  top: -50px;
   z-index: 100;
   height: 50px;
 }

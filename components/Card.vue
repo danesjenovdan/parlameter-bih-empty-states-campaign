@@ -5,13 +5,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'Card'
-  }
+export default {
+  name: 'Card'
+}
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/style/variables";
+@import '@/assets/style/variables';
 
 .card-custom {
   background-color: transparent;
