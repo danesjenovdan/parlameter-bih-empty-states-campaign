@@ -27,7 +27,6 @@
   background-image: linear-gradient(-224deg, #f2db7c 0%, #f6f1de 100%);
 }
 
-
 .subtitle-wrapper {
   width: 50%;
   text-align: center;
