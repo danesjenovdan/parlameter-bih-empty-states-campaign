@@ -14,13 +14,58 @@
         <Tab @click="selected = 4" :active="selected === 4">Dom naroda PF BiH</Tab>
         <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
       </div>
-      <div class="text-wrapper mt32">
+      <div class="text-wrapper mt32" v-if="selected == 2">
         <p class="subsubtitle">Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
         <p class="subsubtitle">Prisustva zastupnika</p>
         <p class="subsubtitle">Obraćanja zastupnika</p>
         <p class="subsubtitle">Sjednice kolegija</p>
         <p class="subsubtitle">
           Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+        </p>
+      </div>
+      <div class="text-wrapper mt32" v-else-if="selected == 1">
+        <p class="subsubtitle">Obraćanja zastupnika</p>
+        <p class="subsubtitle">Sjednice kolegija</p>
+        <p class="subsubtitle">Prisustva zastupnika</p>
+        <p class="subsubtitle">
+          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+        </p>
+      </div>
+      <div class="text-wrapper mt32" v-else-if="selected == 5">
+        <p class="subsubtitle">Rezultati glasanja</p>
+        <p class="subsubtitle">Stenogram</p>
+        <p class="subsubtitle">Obraćanja zastupnika</p>
+        <p class="subsubtitle">Prisustva zastupnika</p>
+        <p class="subsubtitle">Sjednice kolegija</p>
+        <p class="subsubtitle">
+          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+        </p>
+      </div>
+      <div class="text-wrapper mt32" v-else-if="selected == 3">
+        <p class="subsubtitle">Materijali za sjednice</p>
+        <p class="subsubtitle">Zapisnik</p>
+        <p class="subsubtitle">Stenogram</p>
+        <p class="subsubtitle">Izvještaj sa sjednice</p>
+        <p class="subsubtitle">Obraćanja</p>
+        <p class="subsubtitle">Prisustva zastupnika</p>
+        <p class="subsubtitle">Sjednice kolegija</p>
+        <p class="subsubtitle">Rezultati glasanja</p>
+        <p class="subsubtitle">Audio/video zapis</p>
+        <p class="subsubtitle">Delegatska pitanja i inicijative</p>
+        <p class="subsubtitle">
+          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+        </p>
+      </div>
+      <div class="text-wrapper mt32" v-else-if="selected == 4">
+        <p class="subsubtitle">Materijali za sjednice</p>
+        <p class="subsubtitle">Izvještaji</p>
+        <p class="subsubtitle">Obraćanja</p>
+        <p class="subsubtitle">Prisustva zastupnika</p>
+        <p class="subsubtitle">Rezultati glasanja</p>
+        <p class="subsubtitle">Sjednice kolegija</p>
+        <p class="subsubtitle">Audio/video zapisi</p>
+        <p class="subsubtitle">
+          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
         </p>
       </div>
     </div>
