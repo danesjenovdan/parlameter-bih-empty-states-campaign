@@ -85,6 +85,9 @@ export default {
 
   &__texts {
     width: 30%;
+    @media (max-width: $small) {
+      display: none;
+    }
   }
 
   &__button {
