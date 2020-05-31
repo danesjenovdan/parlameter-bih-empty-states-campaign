@@ -6,7 +6,7 @@
         <div class="header__texts flex flex-justify--space-between">
           <a href="#zasto" class="header-link">Zašto?</a>
           <a href="#koji-podaci" class="header-link">Što?</a>
-          <a href="recite-parlamentima" class="header-link">Tražimo</a>
+          <a href="#recite-parlamentima" class="header-link">Tražimo</a>
         </div>
         <a href="#petition-form" class="header__button">Potpiši za otvaranje parlamenata</a>
       </div>
