@@ -4,11 +4,11 @@
       <div class="header__container flex flex-justify--space-between flex-align--center">
         <img class="header__logo" src="@/assets/svg/logo.svg" />
         <div class="header__texts flex flex-justify--space-between">
-          <span>Why?</span>
-          <span>Which?</span>
-          <span>Sign</span>
+          <a href="#zasto" class="header-link">Zašto?</a>
+          <a href="#koji-podaci" class="header-link">Što?</a>
+          <a href="recite-parlamentima" class="header-link">Tražimo</a>
         </div>
-        <div class="header__button">Potpiši za otvaranje parlamenata</div>
+        <a href="#petition-form" class="header__button">Potpiši za otvaranje parlamenata</a>
       </div>
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
@@ -65,6 +65,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/style/variables';
+
 .container-main {
   margin: 0 auto;
   min-height: 100vh;
@@ -92,6 +94,13 @@ export default {
     border-style: solid;
     padding: 5px;
     font-size: 12px;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #7786ea;
+    }
   }
 }
 
@@ -101,8 +110,19 @@ export default {
 
   &__title {
     width: 40%;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 300;
+
+    @media (max-width: $small) {
+      font-size: 1.3rem;
+      width: 90%;
+    }
+
+    @media (min-width: $small) and (max-width: $large) {
+      font-size: 1.5rem;
+      width: 80%;
+    }
+
   }
 
   &__card-container {
@@ -111,6 +131,15 @@ export default {
     justify-content: space-between;
     margin-top: 60px;
     margin-bottom: 60px;
+    flex-wrap: wrap;
+
+    @media (max-width: $small) {
+      width: 90%;
+    }
+
+    @media (min-width: $small) and (max-width: $large) {
+      width: 80%;
+    }
   }
 
   &__card {
@@ -124,6 +153,12 @@ export default {
     min-height: 200px;
     padding: 5px;
 
+    @media (max-width: $small) {
+      width: 100%;
+      margin: 5px;
+    }
+
+
 
     &__title {
       font-size: 50px;
@@ -135,5 +170,17 @@ export default {
       font-size: 20px;
     }
   }
+}
+.header-link {
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+.text {
+
 }
 </style>

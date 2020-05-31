@@ -24,9 +24,9 @@
         </p>
       </div>
     </div>
-    <div class="separator separator--left">
+    <div class="separator separator--left" id="recite-parlamentima">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">Recite PARLAMENTIMA da imamo pravo znati:</span>
+        <span class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</span>
       </div>
     </div>
     <div class="text-wrapper flex flex-justify--center flex-align--center" style="margin: auto">
@@ -94,7 +94,7 @@
     </div>
     <div class="separator separator--left">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>
+        <span class="mr8 text--uppercase separator__text" id="petition-form">POTPIŠITE PETICIJU!</span>
       </div>
     </div>
   </div>
@@ -123,9 +123,12 @@ export default {
   width: 100%;
 }
 .text-wrapper {
-  width: 50%;
+  width: 40%;
   @media (max-width: $small) {
     width: 90%;
+  }
+  @media (min-width: $small) and (max-width: $medium) {
+    width: 70%;
   }
 }
 .tab-wrapper {
@@ -147,8 +150,7 @@ export default {
     justify-content: flex-end;
   }
   &__text {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
     @media (max-width: $small) {
       font-size: 1rem;
     }
@@ -179,5 +181,10 @@ li {
   list-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-image: url('~assets/img/right-arrow.png');
+  background-repeat: no-repeat;
+  background-size: 1.75rem 1rem;
+  background-position: 0 5px;
+  padding-left: 2rem;
 }
 </style>

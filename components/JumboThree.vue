@@ -1,7 +1,7 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center">
     <div class="mb64 mt64 flex flex--column flex-align--center flex-justify--center">
-      <span class="title text--italic">KOJI PODACI NEDOSTAJU?</span>
+      <span class="title text--italic" id="koji-podaci">KOJI PODACI NEDOSTAJU?</span>
       <div class="subtitle-wrapper">
         <span class="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -65,6 +65,9 @@ export default {
 .subtitle-wrapper {
   width: 50%;
   text-align: center;
+  @media (max-width: $medium) {
+    width: 90%;
+  }
 }
 
 .card-title {
@@ -77,10 +80,10 @@ export default {
   font-weight: 300;
 }
 .card-wrapper {
-  width: 70%;
-  @media (max-width: $small) {
-    width: 100%;
-    flex-wrap: wrap;
+  width: 80%;
+  flex-wrap: wrap;
+  @media (max-width: $medium) {
+    width: 90%;
   }
 }
 </style>

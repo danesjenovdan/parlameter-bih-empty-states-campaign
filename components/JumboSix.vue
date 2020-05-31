@@ -4,7 +4,7 @@
       <div class="text--center mb16">
         <span class="title-custom">Signatories</span>
       </div>
-      <div class="fading-text">
+      <div class="fading-text" :class="{'fading-text--cover': !showAll}">
         <span>
           Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha
           Pavliha, Marija Robnik, Simona Vezovšek, Janez Novak, Peter Klepec, Miha Pavliha, Marija Robnik, Simona
@@ -21,7 +21,7 @@
         </span>
       </div>
       <div class="button-wrapper">
-        <button class="custom-button text--uppercase">Show all signatures</button>
+        <button  v-if="!showAll" class="custom-button text--uppercase" @click="showAll = true">Show all signatures</button>
       </div>
     </div>
   </div>
@@ -29,7 +29,12 @@
 
 <script>
 export default {
-  name: 'JumboSix'
+  name: 'JumboSix',
+  data() {
+    return {
+      showAll: false
+    }
+  }
 }
 </script>
 
@@ -46,41 +51,52 @@ export default {
 
 .text-wrapper {
   width: 50%;
-  @media (max-width: $small) {
+  @media (max-width: $medium) {
     width: 90%;
   }
 }
 .fading-text {
   position: relative;
   width: 100%;
+
+
+  &--cover {
+    height: 200px;
+    overflow-y: hidden;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      content: '';
+      background: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 1) 10%,
+          rgba(255, 255, 255, 0) 100%
+      );
+      pointer-events: none; /* so the text is still selectable */
+    }
+  }
 }
 .fading-text:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  content: '';
-  background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 10%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  pointer-events: none; /* so the text is still selectable */
+
 }
 
 button {
   background-color: #7786ea;
   border: none;
   color: white;
-  width: 60%;
   height: 50px;
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
   padding-right: 30px;
   padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .button-wrapper {

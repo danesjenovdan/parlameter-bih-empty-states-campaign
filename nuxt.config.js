@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -13,7 +13,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' }
     ]
   },
   /*
@@ -28,6 +29,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/aos.js'
   ],
   /*
   ** Nuxt.js dev-modules

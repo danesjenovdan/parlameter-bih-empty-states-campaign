@@ -22,8 +22,15 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/assets/style/variables';
 span {
   font-size: 15px;
+}
+img {
+  width: 150px;
+  @media (max-width: $medium) {
+    width: 70px;
+  }
 }
 </style>

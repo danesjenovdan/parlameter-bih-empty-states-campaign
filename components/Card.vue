@@ -28,9 +28,11 @@ export default {
   margin: 10px;
   @media (max-width: $small) {
     width: 100%;
+    min-height: unset;
   }
-  @media (min-width: $small) {
-    width: 40%;
+  @media (min-width: $small) and (max-width: $medium){
+    width: 45%;
+    min-height: unset;
   }
 }
 </style>

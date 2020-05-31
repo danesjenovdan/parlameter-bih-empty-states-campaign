@@ -54,5 +54,8 @@ export default {
 .title-custom {
   font-size: 30px;
   font-weight: 300;
+  @media (max-width: $medium) {
+    font-size: 1.5rem;
+  }
 }
 </style>
