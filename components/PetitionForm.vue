@@ -177,6 +177,11 @@ button {
   font-style: italic;
   padding-right: 30px;
   padding-left: 30px;
+  transition: background-color, 0.2s;
+
+  &:hover {
+    background-color: #6972d2;
+  }
 }
 
 .button-img {

@@ -2,7 +2,7 @@
   <div class="container-c flex flex--column flex-justify--center flex-align--center" id="zasto">
     <div class="mt64 mb64 text--center wrapper flex flex--column flex-justify--center flex-align--center">
       <span class="text--bold text--italic text--uppercase title" >ZAŠTO JE OTVARANJE PARLAMENATA VAŽNO?</span>
-      <div class="card-wrapper flex flex-justify--space-between mt24">
+      <div class="card-wrapper flex flex-justify--center mt24">
         <Card>
           <img src="@/assets/svg/empty-podatki.svg" width="100" class="mt24" />
           <span class="mt24 card-title"> <span class="text--italic text--bold">Brži</span> pristup podacima </span>
@@ -64,10 +64,18 @@ export default {
   font-size: 25px;
 }
 .card-wrapper {
-  width: 80%;
+  width: 50%;
   flex-wrap: wrap;
-  @media (max-width: $medium) {
+  @media (max-width: $small) {
     width: 90%;
+  }
+
+  @media (min-width: $small) and (max-width: $large) {
+    width: 80%;
+  }
+
+  @media (min-width: $large) and (max-width: $xlarge) {
+    width: 60%;
   }
 }
 </style>

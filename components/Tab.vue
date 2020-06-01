@@ -23,6 +23,9 @@ export default {
   font-size: 1rem;
   font-style: italic;
   padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-image, 0.2s;
 
   &--active {
     background-image: linear-gradient(to left, #efcb36 0%, #7786ea 100%);

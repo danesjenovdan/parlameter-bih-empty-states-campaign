@@ -125,13 +125,12 @@ export default {
       font-size: 1.5rem;
       width: 80%;
     }
-
   }
 
   &__card-container {
-    width: 60%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 60px;
     margin-bottom: 60px;
     flex-wrap: wrap;
@@ -142,6 +141,10 @@ export default {
 
     @media (min-width: $small) and (max-width: $large) {
       width: 80%;
+    }
+
+    @media (min-width: $large) and (max-width: $xlarge) {
+      width: 60%;
     }
   }
 
@@ -160,8 +163,6 @@ export default {
       width: 100%;
       margin: 5px;
     }
-
-
 
     &__title {
       font-size: 50px;
@@ -184,6 +185,5 @@ export default {
   }
 }
 .text {
-
 }
 </style>

@@ -80,10 +80,18 @@ export default {
   font-weight: 300;
 }
 .card-wrapper {
-  width: 80%;
+  width: 50%;
   flex-wrap: wrap;
-  @media (max-width: $medium) {
+  @media (max-width: $small) {
     width: 90%;
+  }
+
+  @media (min-width: $small) and (max-width: $large) {
+    width: 80%;
+  }
+
+  @media (min-width: $large) and (max-width: $xlarge) {
+    width: 60%;
   }
 }
 </style>

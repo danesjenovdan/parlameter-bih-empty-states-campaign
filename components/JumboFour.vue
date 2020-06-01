@@ -7,66 +7,143 @@
           magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.
         </span>
       </div>
+      <div></div>
       <div class="tab-wrapper mt24">
         <Tab @click="selected = 1" :active="selected === 1">Predstavnički dom PS BiH</Tab>
+        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 1 }" v-if="selected === 1">
+          <ul class="upper-list">
+            <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+            <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+            <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+            <li class="subsubtitle tab-li zapisnik">
+              Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+            </li>
+          </ul>
+        </div>
         <Tab @click="selected = 2" :active="selected === 2">Dom naroda PS BiH</Tab>
+        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected === 2">
+          <ul class="upper-list">
+            <li class="subsubtitle tab-li materijali">Materijali i izvještaji sa zajedničkih sjednica oba doma</li>
+            <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+            <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+            <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+            <li class="subsubtitle tab-li zapisnik">
+              Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih
+              tijela
+            </li>
+          </ul>
+        </div>
         <Tab @click="selected = 3" :active="selected === 3">Predstavnički dom PF BiH</Tab>
+        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected == 3">
+          <ul class="upper-list">
+            <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
+            <li class="subsubtitle tab-li zapisnik">Zapisnik</li>
+            <li class="subsubtitle tab-li stenogram">Stenogram</li>
+            <li class="subsubtitle tab-li izvjestaj">Izvještaj sa sjednice</li>
+            <li class="subsubtitle tab-li obracanja">Obraćanja</li>
+            <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+            <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+            <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+            <li class="subsubtitle tab-li audio">Audio/video zapis</li>
+            <li class="subsubtitle tab-li pitanja">Delegatska pitanja i inicijative</li>
+            <li class="subsubtitle tab-li zapisnik">
+              Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+            </li>
+          </ul>
+        </div>
         <Tab @click="selected = 4" :active="selected === 4">Dom naroda PF BiH</Tab>
+        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 4 }" v-if="selected == 4">
+          <ul class="upper-list">
+            <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
+            <li class="subsubtitle tab-li izvjestaj">Izvještaji</li>
+            <li class="subsubtitle tab-li obracanja">Obraćanja</li>
+            <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+            <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+            <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+            <li class="subsubtitle tab-li audio">Audio/video zapisi</li>
+            <li class="subsubtitle tab-li zapisnik">
+              Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+            </li>
+          </ul>
+        </div>
         <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
+        <div class="text-wrapper mobile" :class="{ 'mobile-list--open': selected === 5 }" v-if="selected == 5">
+          <ul class="upper-list">
+            <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+            <li class="subsubtitle tab-li stenogram">Stenogram</li>
+            <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+            <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+            <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+            <li class="subsubtitle tab-li zapisnik">
+              Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="text-wrapper mt32" v-if="selected == 2">
-        <p class="subsubtitle">Materijali i izvještaji sa zajedničkih sjednica oba doma</p>
-        <p class="subsubtitle">Prisustva zastupnika</p>
-        <p class="subsubtitle">Obraćanja zastupnika</p>
-        <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">
-          Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
-        </p>
+      <!--      END MOBILE   -->
+      <div class="text-wrapper mt32 desktop-list" v-if="selected == 2">
+        <ul class="upper-list">
+          <li class="subsubtitle tab-li materijali">Materijali i izvještaji sa zajedničkih sjednica oba doma</li>
+          <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+          <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+          <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+          <li class="subsubtitle tab-li zapisnik">
+            Zapisnik, obavještenje, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+          </li>
+        </ul>
       </div>
-      <div class="text-wrapper mt32" v-else-if="selected == 1">
-        <p class="subsubtitle">Obraćanja zastupnika</p>
-        <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">Prisustva zastupnika</p>
-        <p class="subsubtitle">
-          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
-        </p>
+      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 1">
+        <ul class="upper-list">
+          <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+          <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+          <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+          <li class="subsubtitle tab-li zapisnik">
+            Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+          </li>
+        </ul>
       </div>
-      <div class="text-wrapper mt32" v-else-if="selected == 5">
-        <p class="subsubtitle">Rezultati glasanja</p>
-        <p class="subsubtitle">Stenogram</p>
-        <p class="subsubtitle">Obraćanja zastupnika</p>
-        <p class="subsubtitle">Prisustva zastupnika</p>
-        <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">
-          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
-        </p>
+      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 5">
+        <ul class="upper-list">
+          <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+          <li class="subsubtitle tab-li stenogram">Stenogram</li>
+          <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
+          <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+          <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+          <li class="subsubtitle tab-li zapisnik">
+            Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+          </li>
+        </ul>
       </div>
-      <div class="text-wrapper mt32" v-else-if="selected == 3">
-        <p class="subsubtitle">Materijali za sjednice</p>
-        <p class="subsubtitle">Zapisnik</p>
-        <p class="subsubtitle">Stenogram</p>
-        <p class="subsubtitle">Izvještaj sa sjednice</p>
-        <p class="subsubtitle">Obraćanja</p>
-        <p class="subsubtitle">Prisustva zastupnika</p>
-        <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">Rezultati glasanja</p>
-        <p class="subsubtitle">Audio/video zapis</p>
-        <p class="subsubtitle">Delegatska pitanja i inicijative</p>
-        <p class="subsubtitle">
-          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
-        </p>
+      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 3">
+        <ul class="upper-list">
+          <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
+          <li class="subsubtitle tab-li zapisnik">Zapisnik</li>
+          <li class="subsubtitle tab-li stenogram">Stenogram</li>
+          <li class="subsubtitle tab-li izvjestaj">Izvještaj sa sjednice</li>
+          <li class="subsubtitle tab-li obracanja">Obraćanja</li>
+          <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+          <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+          <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+          <li class="subsubtitle tab-li audio">Audio/video zapis</li>
+          <li class="subsubtitle tab-li pitanja">Delegatska pitanja i inicijative</li>
+          <li class="subsubtitle tab-li zapisnik">
+            Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+          </li>
+        </ul>
       </div>
-      <div class="text-wrapper mt32" v-else-if="selected == 4">
-        <p class="subsubtitle">Materijali za sjednice</p>
-        <p class="subsubtitle">Izvještaji</p>
-        <p class="subsubtitle">Obraćanja</p>
-        <p class="subsubtitle">Prisustva zastupnika</p>
-        <p class="subsubtitle">Rezultati glasanja</p>
-        <p class="subsubtitle">Sjednice kolegija</p>
-        <p class="subsubtitle">Audio/video zapisi</p>
-        <p class="subsubtitle">
-          Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
-        </p>
+      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 4">
+        <ul class="upper-list">
+          <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
+          <li class="subsubtitle tab-li izvjestaj">Izvještaji</li>
+          <li class="subsubtitle tab-li obracanja">Obraćanja</li>
+          <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
+          <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
+          <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
+          <li class="subsubtitle tab-li audio">Audio/video zapisi</li>
+          <li class="subsubtitle tab-li zapisnik">
+            Zapisnik, stenogram, izvještaj, audio/video zapis, obraćanja, rezultati glasanja radnih tijela
+          </li>
+        </ul>
       </div>
     </div>
     <div class="separator separator--left" id="recite-parlamentima">
@@ -74,14 +151,16 @@
         <span class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</span>
       </div>
     </div>
-    <div class="text-wrapper flex flex-justify--center flex-align--center" style="margin: auto">
-      <ul>
-        <li>Ko je glasao za, a ko protiv.</li>
-        <li>Kako se glasalo o amandmanima na zakone i državni/entitetskI budžet.</li>
-        <li>Šta se događa u radnim tijelima parlamenata i kako se glasa na tim sjednicama?</li>
-        <li>Šta se događa na sjednicama Kolegija?</li>
-        <li>Funkcionalne e-mail adrese na koje se možemo obratiti zastupnicima/cama.</li>
-      </ul>
+    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
+      <div class="text-wrapper text--left">
+        <ul class="lower-list">
+          <li class="subsubtitle">Ko je glasao za, a ko protiv.</li>
+          <li class="subsubtitle">Kako se glasalo o amandmanima na zakone i državni/entitetskI budžet.</li>
+          <li class="subsubtitle">Šta se događa u radnim tijelima parlamenata i kako se glasa na tim sjednicama?</li>
+          <li class="subsubtitle">Šta se događa na sjednicama Kolegija?</li>
+          <li class="subsubtitle">Funkcionalne e-mail adrese na koje se možemo obratiti zastupnicima/cama.</li>
+        </ul>
+      </div>
     </div>
 
     <div class="separator separator--right">
@@ -173,13 +252,23 @@ export default {
     width: 90%;
   }
   @media (min-width: $small) and (max-width: $medium) {
+    width: 80%;
+  }
+  @media (min-width: $medium) and (max-width: $large) {
     width: 70%;
   }
 }
 .tab-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 60%;
+  @media (max-width: $medium) {
+    flex-direction: column;
+    width: 90%;
+  }
+  @media (min-width: $medium) and (max-width: $xlarge) {
+    width: 80%;
+  }
 }
 
 .separator {
@@ -195,9 +284,9 @@ export default {
     justify-content: flex-end;
   }
   &__text {
-    margin: 5px;
+    margin: 10px 20px;
     @media (max-width: $small) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
   &__item {
@@ -221,15 +310,85 @@ export default {
 }
 
 li {
-  font-size: $font-size-subsubtitle;
   font-weight: 300;
   list-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-image: url('~assets/img/right-arrow.png');
   background-repeat: no-repeat;
+}
+
+ul.lower-list li {
+  background-image: url('~assets/img/right-arrow.png');
   background-size: 1.75rem 1rem;
-  background-position: 0 5px;
+  background-position: 0 10px;
   padding-left: 2rem;
+}
+
+ul.upper-list li {
+  background-size: 2.5rem;
+  background-position: 0 50%;
+  padding-left: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media (max-width: $small) {
+    background-size: 2rem;
+    padding-left: 2.5rem;
+  }
+}
+
+li {
+  &.audio {
+    background-image: url('~assets/svg/liicons/audio.svg');
+  }
+  &.glasanja {
+    background-image: url('~assets/svg/liicons/glasanja.svg');
+  }
+  &.izvjestaj {
+    background-image: url('~assets/svg/liicons/izvjestaj.svg');
+  }
+  &.kolegij {
+    background-image: url('~assets/svg/liicons/kolegij.svg');
+  }
+  &.materijali {
+    background-image: url('~assets/svg/liicons/materijali.svg');
+  }
+  &.obracanja {
+    background-image: url('~assets/svg/liicons/obracanja.svg');
+  }
+  &.pitanja {
+    background-image: url('~assets/svg/liicons/pitanja.svg');
+  }
+  &.prisustva {
+    background-image: url('~assets/svg/liicons/prisustva.svg');
+  }
+  &.radnatijela {
+    background-image: url('~assets/svg/liicons/radna-tijela.svg');
+  }
+  &.stenogram {
+    background-image: url('~assets/svg/liicons/stenogram.svg');
+  }
+  &.zapisnik {
+    background-image: url('~assets/svg/liicons/zapisnik.svg');
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.desktop-list {
+  display: block;
+
+  @media (max-width: $medium) {
+    display: none;
+  }
+}
+
+.mobile-list {
+  display: none;
+
+  @media (max-width: $medium) {
+    display: block;
+  }
 }
 </style>

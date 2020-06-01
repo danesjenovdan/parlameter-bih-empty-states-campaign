@@ -21,7 +21,7 @@
         </span>
       </div>
       <div class="button-wrapper">
-        <button  v-if="!showAll" class="custom-button text--uppercase" @click="showAll = true">Show all signatures</button>
+        <button  v-if="!showAll" class="text--uppercase" @click="showAll = true">Show all signatures</button>
       </div>
     </div>
   </div>
@@ -93,10 +93,12 @@ button {
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 30px;
+  transition: background-color, 0.2s;
+
+  &:hover {
+    background-color: #6972d2;
+  }
 }
 
 .button-wrapper {
