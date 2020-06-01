@@ -1,13 +1,12 @@
 <template>
   <div class="container-main">
-    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24">
+    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24" data-aos="fade-up">
       <div class="text-wrapper text--center">
         <span class="subsubtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.
         </span>
       </div>
-      <div></div>
       <div class="tab-wrapper mt24">
         <Tab @click="selected = 1" :active="selected === 1">Predstavnički dom PS BiH</Tab>
         <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 1 }" v-if="selected === 1">
@@ -146,12 +145,12 @@
         </ul>
       </div>
     </div>
-    <div class="separator separator--left" id="recite-parlamentima">
+    <div class="separator separator--left" id="recite-parlamentima" data-aos="fade-up">
       <div class="separator__item separator__item--left">
         <span class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</span>
       </div>
     </div>
-    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
+    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
       <div class="text-wrapper text--left">
         <ul class="lower-list">
           <li class="subsubtitle">Ko je glasao za, a ko protiv.</li>
@@ -163,14 +162,14 @@
       </div>
     </div>
 
-    <div class="separator separator--right">
+    <div class="separator separator--right" data-aos="fade-up">
       <div class="separator__item separator__item--right">
         <span class="mr8 text--uppercase separator__text"
           >TRAŽITE POTPUNO OTVARANJE DRŽAVNOG I ENTITETSKIH PARLAMENATA</span
         >
       </div>
     </div>
-    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
+    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
       <div class="text-wrapper text--left">
         <span class="subsubtitle">
           Nove tehnologije omogućavaju brzu razmjenu informacija i bh. parlamenti imaju odgovornost koristiti ih da
@@ -181,13 +180,13 @@
       </div>
     </div>
 
-    <div class="separator separator--left">
+    <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
         <span class="mr8 text--uppercase separator__text">ZA TRANSPARENTNOST</span>
       </div>
     </div>
 
-    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24">
+    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
       <div class="text-wrapper text--left mb64">
         <span class="subsubtitle">
           Veća vidljivost i preglednije praćenje aktivnosti svakog pojedinog zastupnika i zastupnice u bh. parlamentima
@@ -199,7 +198,7 @@
           veću otvorenost, pristupačnost i neposrednije uključivanje građanstva u procese donošenja odluka.
         </span>
       </div>
-      <div class="text-wrapper text--center mb64">
+      <div class="text-wrapper text--center mb64" data-aos="fade-up">
         <span class="subtitle">
           Vjeruju li naše zastupnice i zastupnici da nas zapravo ne zanima šta rade, kako i kakve odluke donose u naše
           ime?
@@ -216,7 +215,7 @@
         <span></span>
       </div>
     </div>
-    <div class="separator separator--left">
+    <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
         <span class="mr8 text--uppercase separator__text" id="petition-form">POTPIŠITE PETICIJU!</span>
       </div>

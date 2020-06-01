@@ -1,8 +1,8 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center">
     <div class="mb64 mt64 flex flex--column flex-align--center flex-justify--center">
-      <span class="title text--italic" id="koji-podaci">KOJI PODACI NEDOSTAJU?</span>
-      <div class="subtitle-wrapper">
+      <span class="title text--italic" id="koji-podaci" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</span>
+      <div class="subtitle-wrapper" data-aos="fade-up">
         <span class="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -10,7 +10,7 @@
         </span>
       </div>
       <div class="flex flex-justify--center mt24 card-wrapper">
-        <Card>
+        <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
             Proaktivno objavljivanje dokumenata
           </span>
@@ -20,7 +20,7 @@
             rada,kao i drugih dokumenata od društvenog značaja
           </span>
         </Card>
-        <Card>
+        <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
             Proaktivno objavljivanje dokumenata
           </span>
@@ -30,7 +30,7 @@
             rada,kao i drugih dokumenata od društvenog značaja
           </span>
         </Card>
-        <Card>
+        <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
             Proaktivno objavljivanje dokumenata
           </span>

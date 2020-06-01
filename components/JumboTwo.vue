@@ -1,17 +1,17 @@
 <template>
   <div class="container-c flex flex--column flex-justify--center flex-align--center" id="zasto">
     <div class="mt64 mb64 text--center wrapper flex flex--column flex-justify--center flex-align--center">
-      <span class="text--bold text--italic text--uppercase title" >ZAŠTO JE OTVARANJE PARLAMENATA VAŽNO?</span>
+      <span class="text--bold text--italic text--uppercase title" data-aos="fade-up">ZAŠTO JE OTVARANJE PARLAMENATA VAŽNO?</span>
       <div class="card-wrapper flex flex-justify--center mt24">
-        <Card>
+        <Card data-aos="fade-up">
           <img src="@/assets/svg/empty-podatki.svg" width="100" class="mt24" />
           <span class="mt24 card-title"> <span class="text--italic text--bold">Brži</span> pristup podacima </span>
           <Divider class="mt24" />
           <span class="text--center mt24">
             Otvaranje državnog i entitetskih parlamenata omogućilo bi brže pretraživanje i pregledniji rad zastupnika/ca.
           </span>
-        </Card>
-        <Card>
+        </Card >
+        <Card data-aos="fade-up">
           <img src="@/assets/svg/empty-aplikacija.svg" width="100" class="mt24" />
           <span class="mt24 card-title"> <span class="text--italic text--bold">Razvoj</span> novih aplikacija </span>
           <Divider class="mt24" />
@@ -21,7 +21,7 @@
             znanstvenike/ice, građane/ke koje biraju kome dati glas na izborima.
           </span>
         </Card>
-        <Card>
+        <Card data-aos="fade-up">
           <img src="@/assets/svg/empty-javnost.svg" width="100" class="mt24" />
           <span class="mt24 card-title">
             <span class="text--italic text--bold">Korisno</span> za građane_ke kao i novinare/ke

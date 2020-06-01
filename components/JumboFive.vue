@@ -1,5 +1,5 @@
 <template>
-  <div class="container-c flex flex-justify--center flex-align--center">
+  <div class="container-c flex flex-justify--center flex-align--center" data-aos="fade-up">
     <div class="mb16 mt16 flex flex--column flex-align--center flex-justify--center p32">
       <span class="title-custom">We need 5000 signatures to send this letter to Sabor. </span>
       <ProgressBar :width="50" class="mt16" />

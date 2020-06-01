@@ -1,6 +1,6 @@
 <template>
   <div class="container-main">
-    <div class="header flex flex-justify--space-evenly flex-align--center flex--column mt4">
+    <div class="header flex flex-justify--space-evenly flex-align--center flex--column mt4" >
       <div class="header__container flex flex-justify--space-between flex-align--center">
         <img class="header__logo" src="@/assets/svg/logo.svg" />
         <div class="header__texts flex flex-justify--space-between">
@@ -12,27 +12,27 @@
       </div>
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
-      <div class="text--center jumbotron-first__title mt32">
+      <div class="text--center jumbotron-first__title mt32" data-aos="fade-up">
         <span class="text--center">
           Prema <span class="text--underline">istraživanju otvorenosti</span> institucija zakonodavne vlasti u regionu,
           Parlamenti u BiH zauzimaju posljednje mjesto.
         </span>
       </div>
       <div class="jumbotron-first__card-container mt40 mb40">
-        <div class="jumbotron-first__card">
+        <div class="jumbotron-first__card" data-aos="fade-up">
           <span class="jumbotron-first__card__title">46 %</span>
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2017</span>
         </div>
-        <div class="jumbotron-first__card">
+        <div class="jumbotron-first__card" data-aos="fade-up">
           <span class="jumbotron-first__card__title">49 %</span>
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2018</span>
         </div>
-        <div class="jumbotron-first__card">
+        <div class="jumbotron-first__card" data-aos="fade-up">
           <span class="jumbotron-first__card__title">49 %</span>
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
         </div>
       </div>
-      <div class="text--center jumbotron-first__title mb32">
+      <div class="text--center jumbotron-first__title mb32" data-aos="fade-up">
         <span class="text--center">
           Vrijeme je da <span class="text--bold">zakonodavne vlasti u BiH</span> ulože napore kako bi
           <span class="text--bold">unaprijedile svoju otvorenost!</span>

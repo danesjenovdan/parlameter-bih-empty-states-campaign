@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbo flex flex--column flex-justify--center flex-align--center">
+  <div class="jumbo flex flex--column flex-justify--center flex-align--center" data-aos="fade-up">
     <div class="text--center title mt32">
         <span class="text--center text--uppercase text--bold">
           Reci i drugima da je ovo važno!
@@ -38,7 +38,7 @@ export default {
   }
 
   &__card-container {
-    width: 60%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
@@ -47,10 +47,14 @@ export default {
     @media (max-width: $medium) {
       width: 90%;
     }
+    @media (min-width: $medium) and (max-width: $xlarge) {
+      width: 60%;
+    }
   }
 
   &__card {
-    width: 27%;
+    width: 120px;
+    height: 120px;
     background-color: transparent;
     border: solid #7786ea;
     display: flex;
@@ -58,7 +62,6 @@ export default {
     justify-content: center;
     align-content: center;
     text-align: center;
-    min-height: 200px;
     padding: 5px;
     margin: 5px;
 
@@ -66,8 +69,14 @@ export default {
       background-color: #9db4ff;
     }
 
-    @media (max-width: $medium) {
-      min-height: unset;
+    @media (max-width: $small) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $small) and (max-width: $medium) {
+      width: 120px;
+      height: 120px;
     }
   }
 

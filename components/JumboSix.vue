@@ -1,5 +1,5 @@
 <template>
-  <div class="container-c flex flex-justify--center flex-align--center flex--column mt64">
+  <div class="container-c flex flex-justify--center flex-align--center flex--column mt64" data-aos="fade-up">
     <div class="text-wrapper">
       <div class="text--center mb16">
         <span class="title-custom">Signatories</span>

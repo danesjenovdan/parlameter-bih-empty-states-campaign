@@ -1,5 +1,5 @@
 <template>
-  <div class="container-c flex flex-justify--center flex-align--center">
+  <div class="container-c flex flex-justify--center flex-align--center" data-aos="fade-up">
     <div class="mb64 flex flex--column flex-align--center flex-justify--center">
       <form class="vue-form" @submit.prevent="submit">
         <div class="error-message">
