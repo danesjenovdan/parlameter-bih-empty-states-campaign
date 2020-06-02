@@ -66,7 +66,7 @@
           </ul>
         </div>
         <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
-        <div class="text-wrapper mobile" :class="{ 'mobile-list--open': selected === 5 }" v-if="selected == 5">
+        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 5 }" v-if="selected == 5">
           <ul class="upper-list">
             <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
             <li class="subsubtitle tab-li stenogram">Stenogram</li>
