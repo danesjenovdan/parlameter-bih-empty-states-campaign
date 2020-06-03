@@ -1,17 +1,5 @@
 @import "variables";
 
-.title {
-  font-size: $font-size-title;
-  font-weight: 500;
-  text-align: center;
-  @media (max-width: $small) {
-    font-size: 1.5rem;
-  }
-  @media (min-width: $small) and (max-width: $large) {
-    font-size: 1.8rem;
-  }
-}
-
 .subtitle {
   font-size: $font-size-subtitle;
   font-weight: 300;
@@ -36,4 +24,45 @@
   @media (min-width: $small) and (max-width: $large) {
     font-size: 1.2rem;
   }
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3.5rem;
+
+  @media (max-width: $medium) {
+    font-size: 2.25rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+
+  @media (max-width: $medium) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+
+  @media (max-width: $medium) {
+    font-size: 1.8rem;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
 }

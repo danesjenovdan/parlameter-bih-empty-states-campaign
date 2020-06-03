@@ -1,10 +1,10 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center" data-aos="fade-up">
     <div class="mb16 mt16 flex flex--column flex-align--center flex-justify--center p32">
-      <span class="title-custom">We need 5000 signatures to send this letter to Sabor. </span>
-      <ProgressBar :width="50" class="mt16" />
+      <span class="title-custom">Potpiši - jer imamo pravo znati </span>
+      <ProgressBar :width="count" class="mt16" />
       <div class="flex flex-align--center flex-justify--flex-end counter">
-        <span>976 / 5000</span>
+        <span>{{ $store.state.totalSignatureCount }} / 15000</span>
       </div>
     </div>
   </div>
@@ -14,7 +14,15 @@
 import ProgressBar from './ProgressBar'
 export default {
   name: 'JumboFive',
-  components: { ProgressBar }
+  components: { ProgressBar },
+  computed: {
+    count() {
+      let count = this.$store.state.totalSignatureCount;
+      count = Math.round(count * 100 / 15000)
+      count = count > 100 ? 100 : count
+      return count
+    }
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container-main">
-    <div class="header flex flex-justify--space-evenly flex-align--center flex--column mt4" >
+    <div class="container header flex flex-justify--space-evenly flex-align--center mt4" >
       <div class="header__container flex flex-justify--space-between flex-align--center">
         <img class="header__logo" src="@/assets/svg/logo.svg" />
         <div class="header__texts flex flex-justify--space-between">
@@ -12,13 +12,14 @@
       </div>
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
-      <div class="text--center jumbotron-first__title mt32" data-aos="fade-up">
-        <span class="text--center">
-          Prema <span class="text--underline">istraživanju otvorenosti</span> institucija zakonodavne vlasti u regionu,
+      <div class="container text--center jumbotron-first__title mt32" data-aos="fade-up">
+        <span class="lead text--center">
+          Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio">istraživanju otvorenosti</a>
+          institucija zakonodavne vlasti u regionu,
           Parlamenti u BiH zauzimaju posljednje mjesto.
         </span>
       </div>
-      <div class="jumbotron-first__card-container mt40 mb40">
+      <div class="container jumbotron-first__card-container-c mt40 mb40">
         <div class="jumbotron-first__card" data-aos="fade-up">
           <span class="jumbotron-first__card__title">46 %</span>
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2017</span>
@@ -32,11 +33,11 @@
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
         </div>
       </div>
-      <div class="text--center jumbotron-first__title mb32" data-aos="fade-up">
-        <span class="text--center">
-          Vrijeme je da <span class="text--bold">zakonodavne vlasti u BiH</span> ulože napore kako bi
-          <span class="text--bold">unaprijedile svoju otvorenost!</span>
-        </span>
+      <div class="text--center container mb32" data-aos="fade-up">
+        <h1 class="text--center">
+          Vrijeme je da <strong>zakonodavne vlasti u BiH</strong> ulože napore kako bi
+          <strong>unaprijedile svoju otvorenost!</strong>
+        </h1>
       </div>
     </div>
     <JumboTwo />
@@ -60,7 +61,10 @@ import JumboSix from '../components/JumboSix'
 import JumboSeven from '../components/JumboSeven'
 import JumboEight from '../components/JumboEight'
 export default {
-  components: { JumboEight, JumboSeven, JumboSix, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo }
+  components: { JumboEight, JumboSeven, JumboSix, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
+  mounted() {
+    this.$store.dispatch('getSignatures')
+  }
 }
 </script>
 
@@ -68,15 +72,13 @@ export default {
 @import '@/assets/style/variables';
 
 .container-main {
-  margin: 0 auto;
   min-height: 100vh;
-  width: 100%;
 }
 .header {
   height: 70px;
-  width: 100%;
+
   &__container {
-    width: 80%;
+    width: 100%;
   }
 
   &__logo {
@@ -85,7 +87,7 @@ export default {
 
   &__texts {
     width: 30%;
-    @media (max-width: $small) {
+    @media (max-width: $large) {
       display: none;
     }
   }
@@ -95,10 +97,16 @@ export default {
     border-width: 1px;
     border-color: #7786ea;
     border-style: solid;
-    padding: 5px;
-    font-size: 12px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s;
+
+    @media (max-width: $medium) {
+      padding: 5px;
+      font-size: 0.8rem;
+      margin: 5px;
+    }
 
     &:hover {
       color: #ffffff;
@@ -108,26 +116,10 @@ export default {
 }
 
 .jumbotron-first {
-  background-image: linear-gradient(-224deg, #abb4f2 0%, #f1f2fb 100%);
   width: 100%;
+  background-image: linear-gradient(-224deg, #abb4f2 0%, #f1f2fb 100%);
 
-  &__title {
-    width: 40%;
-    font-size: 2rem;
-    font-weight: 300;
-
-    @media (max-width: $small) {
-      font-size: 1.3rem;
-      width: 90%;
-    }
-
-    @media (min-width: $small) and (max-width: $large) {
-      font-size: 1.5rem;
-      width: 80%;
-    }
-  }
-
-  &__card-container {
+  &__card-container-c {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
@@ -149,8 +141,8 @@ export default {
   }
 
   &__card {
-    width: 27%;
-    background-color: white;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +151,7 @@ export default {
     min-height: 200px;
     padding: 5px;
 
-    @media (max-width: $small) {
+    @media (max-width: $large) {
       width: 100%;
       margin: 5px;
     }
@@ -180,6 +172,7 @@ export default {
   opacity: 0.5;
   text-decoration: none;
   transition: opacity 0.2s;
+  font-size: 1.25rem;
   &:hover {
     opacity: 1;
   }

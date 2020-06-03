@@ -1,21 +1,26 @@
 <template>
-  <div class="jumbo flex flex--column flex-justify--center flex-align--center" data-aos="fade-up">
-    <div class="text--center title mt32">
-        <span class="text--center text--uppercase text--bold">
-          Reci i drugima da je ovo važno!
-        </span>
+  <div class="jumbo " data-aos="fade-up">
+    <div class="container flex flex--column flex-justify--center flex-align--center">
+      <div class="text--center title mt32">
+        <h2 class="text--center text--uppercase">
+          <em>
+            Reci i drugima da je ovo važno!
+          </em>
+        </h2>
+      </div>
+      <div class="card-container mt40 mb40">
+        <div class="jumbo__card">
+          <img class="social-icons" src="@/assets/svg/facebook.svg" />
+        </div>
+        <div class="jumbo__card">
+          <img class="social-icons" src="@/assets/svg/twitter.svg" />
+        </div>
+        <div class="jumbo__card">
+          <img class="social-icons" src="@/assets/svg/email.svg" />
+        </div>
+      </div>
     </div>
-    <div class="jumbo__card-container mt40 mb40">
-      <div class="jumbo__card">
-        <img class="social-icons" src="@/assets/svg/facebook.svg" />
-      </div>
-      <div class="jumbo__card">
-        <img class="social-icons" src="@/assets/svg/twitter.svg" />
-      </div>
-      <div class="jumbo__card">
-        <img class="social-icons" src="@/assets/svg/email.svg" />
-      </div>
-    </div>
+
   </div>
 </template>
 

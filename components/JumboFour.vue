@@ -1,15 +1,9 @@
 <template>
   <div class="container-main">
-    <div class="container-c flex flex-justify--center flex-align--center flex--column mt24" data-aos="fade-up">
-      <div class="text-wrapper text--center">
-        <span class="subsubtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.
-        </span>
-      </div>
+    <div class="container flex flex-justify--center flex-align--center flex--column mt24" data-aos="fade-up">
       <div class="tab-wrapper mt24">
-        <Tab @click="selected = 1" :active="selected === 1">Predstavnički dom PS BiH</Tab>
-        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 1 }" v-if="selected === 1">
+        <Tab @click="selected === 1 ? selected = 0 : selected = 1" :active="selected === 1">Predstavnički dom PS BiH</Tab>
+        <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 1 }" v-if="selected === 1">
           <ul class="upper-list">
             <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
             <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
@@ -19,8 +13,8 @@
             </li>
           </ul>
         </div>
-        <Tab @click="selected = 2" :active="selected === 2">Dom naroda PS BiH</Tab>
-        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected === 2">
+        <Tab @click="selected === 2 ? selected = 0 : selected = 2" :active="selected === 2">Dom naroda PS BiH</Tab>
+        <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected === 2">
           <ul class="upper-list">
             <li class="subsubtitle tab-li materijali">Materijali i izvještaji sa zajedničkih sjednica oba doma</li>
             <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
@@ -32,8 +26,8 @@
             </li>
           </ul>
         </div>
-        <Tab @click="selected = 3" :active="selected === 3">Predstavnički dom PF BiH</Tab>
-        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected == 3">
+        <Tab @click="selected === 3 ? selected = 0 : selected = 3" :active="selected === 3">Predstavnički dom PF BiH</Tab>
+        <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 2 }" v-if="selected == 3">
           <ul class="upper-list">
             <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
             <li class="subsubtitle tab-li zapisnik">Zapisnik</li>
@@ -50,8 +44,8 @@
             </li>
           </ul>
         </div>
-        <Tab @click="selected = 4" :active="selected === 4">Dom naroda PF BiH</Tab>
-        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 4 }" v-if="selected == 4">
+        <Tab @click="selected === 4 ? selected = 0 : selected = 4" :active="selected === 4">Dom naroda PF BiH</Tab>
+        <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 4 }" v-if="selected == 4">
           <ul class="upper-list">
             <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
             <li class="subsubtitle tab-li izvjestaj">Izvještaji</li>
@@ -65,8 +59,8 @@
             </li>
           </ul>
         </div>
-        <Tab @click="selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
-        <div class="text-wrapper mobile-list" :class="{ 'mobile-list--open': selected === 5 }" v-if="selected == 5">
+        <Tab @click="selected === 5 ? selected = 0 : selected = 5" :active="selected === 5">Narodna skupština RS</Tab>
+        <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 5 }" v-if="selected == 5">
           <ul class="upper-list">
             <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
             <li class="subsubtitle tab-li stenogram">Stenogram</li>
@@ -80,7 +74,7 @@
         </div>
       </div>
       <!--      END MOBILE   -->
-      <div class="text-wrapper mt32 desktop-list" v-if="selected == 2">
+      <div class="col-12 col-md-8 col-lg-6 mt32 desktop-list" v-if="selected === 2">
         <ul class="upper-list">
           <li class="subsubtitle tab-li materijali">Materijali i izvještaji sa zajedničkih sjednica oba doma</li>
           <li class="subsubtitle tab-li prisustva">Prisustva zastupnika</li>
@@ -91,7 +85,7 @@
           </li>
         </ul>
       </div>
-      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 1">
+      <div class="col-12 col-md-8 col-lg-6 mt32 desktop-list" v-else-if="selected === 1">
         <ul class="upper-list">
           <li class="subsubtitle tab-li obracanja">Obraćanja zastupnika</li>
           <li class="subsubtitle tab-li kolegij">Sjednice kolegija</li>
@@ -101,7 +95,7 @@
           </li>
         </ul>
       </div>
-      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 5">
+      <div class="col-12 col-md-8 col-lg-6 mt32 desktop-list" v-else-if="selected === 5">
         <ul class="upper-list">
           <li class="subsubtitle tab-li glasanja">Rezultati glasanja</li>
           <li class="subsubtitle tab-li stenogram">Stenogram</li>
@@ -113,7 +107,7 @@
           </li>
         </ul>
       </div>
-      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 3">
+      <div class="col-12 col-md-8 col-lg-6 mt32 desktop-list" v-else-if="selected === 3">
         <ul class="upper-list">
           <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
           <li class="subsubtitle tab-li zapisnik">Zapisnik</li>
@@ -130,7 +124,7 @@
           </li>
         </ul>
       </div>
-      <div class="text-wrapper mt32 desktop-list" v-else-if="selected == 4">
+      <div class="col-12 col-md-8 col-lg-6 mt32 desktop-list" v-else-if="selected === 4">
         <ul class="upper-list">
           <li class="subsubtitle tab-li materijali">Materijali za sjednice</li>
           <li class="subsubtitle tab-li izvjestaj">Izvještaji</li>
@@ -151,7 +145,7 @@
       </div>
     </div>
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
-      <div class="text-wrapper text--left">
+      <div class="col-12 col-md-8 col-lg-6 text--left">
         <ul class="lower-list">
           <li class="subsubtitle">Ko je glasao za, a ko protiv.</li>
           <li class="subsubtitle">Kako se glasalo o amandmanima na zakone i državni/entitetskI budžet.</li>
@@ -170,7 +164,7 @@
       </div>
     </div>
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
-      <div class="text-wrapper text--left">
+      <div class="col-12 col-md-8 col-lg-6 text--left">
         <span class="subsubtitle">
           Nove tehnologije omogućavaju brzu razmjenu informacija i bh. parlamenti imaju odgovornost koristiti ih da
           javnosti ponude službene i provjerene informacije nasuprot dezinformacijama, slobodnim interpretacijama i
@@ -187,7 +181,7 @@
     </div>
 
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
-      <div class="text-wrapper text--left mb64">
+      <div class="col-12 col-md-8 col-lg-6 text--left mb64">
         <span class="subsubtitle">
           Veća vidljivost i preglednije praćenje aktivnosti svakog pojedinog zastupnika i zastupnice u bh. parlamentima
           povećala bi i njihov osjećaj odgovornosti prema biračicama i biračima i njihovu predanost javnom interesu. Tako
@@ -198,26 +192,23 @@
           veću otvorenost, pristupačnost i neposrednije uključivanje građanstva u procese donošenja odluka.
         </span>
       </div>
-      <div class="text-wrapper text--center mb64" data-aos="fade-up">
-        <span class="subtitle">
+      <div class="col-12 col-md-8 col-lg-6 text--center mb64" data-aos="fade-up">
+        <h3>
           Vjeruju li naše zastupnice i zastupnici da nas zapravo ne zanima šta rade, kako i kakve odluke donose u naše
           ime?
-          <br />
-          <br />
+        </h3>
+        <h2 class="mb24 mt24">
           Dokažimo im suprotno!
-          <br />
-          <br />
-        </span>
-        <span class="subtitle text--italic">
+        </h2>
+        <h3 class="text--italic" id="petition-form">
           Recite Parlamentarnoj skupštini Bosne i Hercegovine, Parlamentu Federacije BiH i Narodnoj skupštini Republike
           Srpske da je važno da otvore svoje podatke tako da budu što brže dostupni i spremni za korištenje.
-        </span>
-        <span></span>
+        </h3>
       </div>
     </div>
     <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text" id="petition-form">POTPIŠITE PETICIJU!</span>
+        <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>
       </div>
     </div>
   </div>
@@ -245,28 +236,15 @@ export default {
 .container-main {
   width: 100%;
 }
-.text-wrapper {
-  width: 40%;
-  @media (max-width: $small) {
-    width: 90%;
-  }
-  @media (min-width: $small) and (max-width: $medium) {
-    width: 80%;
-  }
-  @media (min-width: $medium) and (max-width: $large) {
-    width: 70%;
-  }
-}
 .tab-wrapper {
   display: flex;
   justify-content: center;
-  width: 60%;
-  @media (max-width: $medium) {
+  width: 100%;
+
+  @media (max-width: $large) {
     flex-direction: column;
-    width: 90%;
   }
-  @media (min-width: $medium) and (max-width: $xlarge) {
-    width: 80%;
+  @media (min-width: $large) and (max-width: $xlarge) {
   }
 }
 
@@ -378,7 +356,7 @@ ul {
 .desktop-list {
   display: block;
 
-  @media (max-width: $medium) {
+  @media (max-width: $large) {
     display: none;
   }
 }
@@ -386,7 +364,7 @@ ul {
 .mobile-list {
   display: none;
 
-  @media (max-width: $medium) {
+  @media (max-width: $large) {
     display: block;
   }
 }

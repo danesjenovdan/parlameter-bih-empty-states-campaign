@@ -1,45 +1,47 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center">
-    <div class="mb64 mt64 flex flex--column flex-align--center flex-justify--center">
-      <span class="title text--italic" id="koji-podaci" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</span>
-      <div class="subtitle-wrapper" data-aos="fade-up">
+    <div class="container mb64 mt64 flex flex--column flex-align--center flex-justify--center">
+      <h2 class="title text--italic" id="koji-podaci" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</h2>
+      <div class="text--center" data-aos="fade-up">
         <span class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Iako postoje različitosti kada je u pitanju objavljivanje dokumenata na zvaničnim stranicama zakonodavnih institucija u BiH, ono što je zajedničko svim parlamentima jeste uskraćivanje informacija o sjednicama kolegija te radnih tijela ovih organa vlast.
         </span>
       </div>
-      <div class="flex flex-justify--center mt24 card-wrapper">
-        <Card data-aos="fade-up">
+      <div class="mt24 row">
+        <div class="col-lg-4 col-sm-12 mb8">
+          <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
             Proaktivno objavljivanje dokumenata
           </span>
-          <Divider class="mt24" />
-          <span class="text--center card-subtitle mt24">
+            <Divider class="mt24" />
+            <span class="text--center card-subtitle mt24">
             Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
-            rada,kao i drugih dokumenata od društvenog značaja
+            rada,kao i drugih dokumenata od društvenog značaja.
           </span>
-        </Card>
-        <Card data-aos="fade-up">
+          </Card>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb8">
+          <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
-            Proaktivno objavljivanje dokumenata
+            Mašinski čitljivi dokumenti
           </span>
-          <Divider class="mt24" />
-          <span class="text--center card-subtitle mt24">
-            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
-            rada,kao i drugih dokumenata od društvenog značaja
+            <Divider class="mt24" />
+            <span class="text--center card-subtitle mt24">
+            Dokumenti koje je moguće pronaći na zvaničnim stranicama parlamenta, uglavnom nisu objavljeni u poluotvorenom ili otvorenom formatu.
           </span>
-        </Card>
-        <Card data-aos="fade-up">
+          </Card>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <Card data-aos="fade-up">
           <span class="mt24 card-title text--center">
-            Proaktivno objavljivanje dokumenata
+            Automatsko ažuriranje podataka
           </span>
-          <Divider class="mt24" />
-          <span class="text--center card-subtitle mt24">
-            Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
-            rada,kao i drugih dokumenata od društvenog značaja
+            <Divider class="mt24" />
+            <span class="text--center card-subtitle mt24">
+            Podaci parlamenata u BiH nisu otvoreni i ne potiču razvoj novih, sličnih ili od Parlametra drugačijih aplikacija. Podatke preuzete sa službenih stranica parlamenata često treba dodatno provjeravati, nadopunjavati pa i ručno unositi jer nije omogućeno strojno preuzimanje i automatsko ažuriranje podataka.
           </span>
-        </Card>
+          </Card>
+        </div>
       </div>
     </div>
   </div>
@@ -60,14 +62,6 @@ export default {
 .container-c {
   width: 100%;
   background-image: linear-gradient(-224deg, #f2db7c 0%, #f6f1de 100%);
-}
-
-.subtitle-wrapper {
-  width: 50%;
-  text-align: center;
-  @media (max-width: $medium) {
-    width: 90%;
-  }
 }
 
 .card-title {

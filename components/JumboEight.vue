@@ -1,14 +1,14 @@
 <template>
-  <div class="container-c mt32 mb32">
+  <div class="container-c mt32 mb64">
     <div class="flex flex--column flex-justify--center flex-align--center">
-      <span>Prepared by</span>
+      <span>Pripremili</span>
       <div class="flex flex-justify--space-evenly mt8">
         <img src="@/assets/img/logo1.png" width="100" class="mr16">
         <img src="@/assets/img/logo2.png" width="100" class="ml16">
       </div>
     </div>
     <div class="flex flex--column flex-justify--center flex-align--center container-c__item">
-      <span>Developed with kind support from</span>
+      <span>Zahvaljujući podršci</span>
       <div class="flex flex-justify--space-evenly mt8">
         <img src="@/assets/img/logo3.png" class="logo3">
       </div>
