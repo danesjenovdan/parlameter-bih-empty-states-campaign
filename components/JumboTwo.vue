@@ -1,5 +1,5 @@
 <template>
-  <div class="mt64 mb64 container flex flex--column flex-justify--center flex-align--center" id="zasto">
+  <div class="mt64 mb64 container flex flex--column flex-justify--center flex-align--center">
       <h2 class="text--italic text--uppercase text--center" data-aos="fade-up">ZAŠTO JE OTVARANJE PARLAMENATA VAŽNO?</h2>
       <div class="mt24 row">
         <div class="col-lg-4 col-sm-12 mb8">

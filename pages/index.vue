@@ -4,17 +4,18 @@
       <div class="header__container flex flex-justify--space-between flex-align--center">
         <img class="header__logo" src="@/assets/svg/logo.svg" />
         <div class="header__texts flex flex-justify--space-between">
-          <a href="#zasto" class="header-link">Zašto?</a>
-          <a href="#koji-podaci" class="header-link">Što?</a>
-          <a href="#recite-parlamentima" class="header-link">Tražimo</a>
+          <a href="#zasto" class="link header-link">Zašto?</a>
+          <a href="#koji-podaci" class="link header-link">Što?</a>
+          <a href="#recite-parlamentima" class="link header-link">Tražimo</a>
         </div>
-        <a href="#petition-form" class="header__button">Potpiši za otvaranje parlamenata</a>
+        <a href="#petition-form" class="link header__button">Potpiši za otvaranje parlamenata</a>
       </div>
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
       <div class="container text--center jumbotron-first__title mt32" data-aos="fade-up">
         <span class="lead text--center">
-          Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio">istraživanju otvorenosti</a>
+          Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio" class="black-link">
+          <strong>istraživanju otvorenosti</strong></a>
           institucija zakonodavne vlasti u regionu,
           Parlamenti u BiH zauzimaju posljednje mjesto.
         </span>
@@ -33,15 +34,15 @@
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
         </div>
       </div>
-      <div class="text--center container mb32" data-aos="fade-up">
+      <div class="text--center container mb32" data-aos="fade-up" >
         <h1 class="text--center">
           Vrijeme je da <strong>zakonodavne vlasti u BiH</strong> ulože napore kako bi
           <strong>unaprijedile svoju otvorenost!</strong>
         </h1>
       </div>
     </div>
-    <JumboTwo />
-    <JumboThree />
+    <JumboTwo id="zasto"/>
+    <JumboThree id="koji-podaci"/>
     <JumboFour />
     <PetitionForm />
     <JumboFive />
@@ -64,6 +65,20 @@ export default {
   components: { JumboEight, JumboSeven, JumboSix, JumboFive, PetitionForm, JumboFour, JumboThree, JumboTwo },
   mounted() {
     this.$store.dispatch('getSignatures')
+
+    document.querySelectorAll('a.link').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href');
+        if (href.indexOf('#') === 0) {
+          event.preventDefault();
+          document.querySelector(href).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+          });
+        }
+      });
+    });
   }
 }
 </script>
@@ -177,6 +192,8 @@ export default {
     opacity: 1;
   }
 }
-.text {
+.black-link {
+  color: #000;
+  text-decoration: none;
 }
 </style>

@@ -139,7 +139,8 @@
         </ul>
       </div>
     </div>
-    <div class="separator separator--left" id="recite-parlamentima" data-aos="fade-up">
+    <div id="recite-parlamentima"></div>
+    <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
         <span class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</span>
       </div>
@@ -200,12 +201,13 @@
         <h2 class="mb24 mt24">
           Dokažimo im suprotno!
         </h2>
-        <h3 class="text--italic" id="petition-form">
+        <h3 class="text--italic">
           Recite Parlamentarnoj skupštini Bosne i Hercegovine, Parlamentu Federacije BiH i Narodnoj skupštini Republike
           Srpske da je važno da otvore svoje podatke tako da budu što brže dostupni i spremni za korištenje.
         </h3>
       </div>
     </div>
+    <div id="petition-form"></div>
     <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
         <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>

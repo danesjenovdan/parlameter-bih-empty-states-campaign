@@ -1,7 +1,7 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center">
     <div class="container mb64 mt64 flex flex--column flex-align--center flex-justify--center">
-      <h2 class="title text--italic" id="koji-podaci" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</h2>
+      <h2 class="title text--italic" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</h2>
       <div class="text--center" data-aos="fade-up">
         <span class="subtitle">
           Iako postoje različitosti kada je u pitanju objavljivanje dokumenata na zvaničnim stranicama zakonodavnih institucija u BiH, ono što je zajedničko svim parlamentima jeste uskraćivanje informacija o sjednicama kolegija te radnih tijela ovih organa vlast.
