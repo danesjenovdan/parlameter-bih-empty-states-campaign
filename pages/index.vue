@@ -13,12 +13,12 @@
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
       <div class="container text--center jumbotron-first__title mt32" data-aos="fade-up">
-        <span class="lead text--center">
+        <h1 class="lead text--center">
           Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio" class="black-link">
           <strong>istraživanju otvorenosti</strong></a>
           institucija zakonodavne vlasti u regionu,
           Parlamenti u BiH zauzimaju posljednje mjesto.
-        </span>
+        </h1>
       </div>
       <div class="container jumbotron-first__card-container-c mt40 mb40">
         <div class="jumbotron-first__card" data-aos="fade-up">
@@ -35,10 +35,10 @@
         </div>
       </div>
       <div class="text--center container mb32" data-aos="fade-up" >
-        <h1 class="text--center">
+        <h2 class="text--center">
           Vrijeme je da <strong>zakonodavne vlasti u BiH</strong> ulože napore kako bi
           <strong>unaprijedile svoju otvorenost!</strong>
-        </h1>
+        </h2>
       </div>
     </div>
     <JumboTwo id="zasto"/>

@@ -76,9 +76,9 @@ export default {
   name: 'PetitionForm',
   data: function() {
     return {
-      name: 'asd',
+      name: '',
       email: {
-        value: 'k@k.com',
+        value: '',
         valid: true
       },
       features: [
