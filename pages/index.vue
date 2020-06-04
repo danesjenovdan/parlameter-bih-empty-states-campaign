@@ -30,7 +30,7 @@
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2018</span>
         </div>
         <div class="jumbotron-first__card" data-aos="fade-up">
-          <span class="jumbotron-first__card__title">49 %</span>
+          <span class="jumbotron-first__card__title">39 %</span>
           <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
         </div>
       </div>

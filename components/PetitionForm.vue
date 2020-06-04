@@ -136,7 +136,7 @@ export default {
 }
 
 .vue-form {
-  font-size: 16px;
+  font-size: 1.25rem;
   width: 500px;
   padding: 15px 30px;
   margin: 20px auto;
@@ -144,6 +144,7 @@ export default {
 
   @media (max-width: $small) {
     width: 90%;
+    font-size: 1rem;
   }
 }
 
@@ -155,8 +156,8 @@ export default {
 input[type='text'],
 input[type='email'] {
   width: 100%;
-  height: 50px;
-  padding: 10px;
+  height: 60px;
+  padding: 20px;
   border: 2px solid #7786ea;
   background-color: #ffffff;
 }
@@ -181,7 +182,7 @@ button {
   border: none;
   color: white;
   width: 100%;
-  height: 50px;
+  height: 60px;
   font-size: 20px;
   font-weight: 500;
   font-style: italic;

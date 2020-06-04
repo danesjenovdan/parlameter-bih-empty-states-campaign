@@ -4,7 +4,7 @@
       <h2 class="title text--italic text--center" data-aos="fade-up">KOJI PODACI NEDOSTAJU?</h2>
       <div class="text--center" data-aos="fade-up">
         <span class="subtitle">
-          Iako postoje različitosti kada je u pitanju objavljivanje dokumenata na zvaničnim stranicama zakonodavnih institucija u BiH, ono što je zajedničko svim parlamentima jeste uskraćivanje informacija o sjednicama kolegija te radnih tijela ovih organa vlast.
+          U svima institucijama nedostaje
         </span>
       </div>
       <div class="mt24 row">
@@ -16,7 +16,7 @@
             <Divider class="mt24" />
             <span class="text--center card-subtitle mt24">
             Parlamenti nemaju praksu proaktivnog objavljivanja dokumenata koji se odnose na monitoring i evaluaciju
-            rada,kao i drugih dokumenata od društvenog značaja.
+            rada, kao i drugih dokumenata od društvenog značaja.
           </span>
           </Card>
         </div>

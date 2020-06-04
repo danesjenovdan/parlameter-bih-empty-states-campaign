@@ -1,6 +1,11 @@
 <template>
   <div class="container-main">
-    <div class="container flex flex-justify--center flex-align--center flex--column mt24" data-aos="fade-up">
+    <div class="flex flex-justify--center">
+      <div class="text--center mt24 col-12 col-md-8 col-lg-6" data-aos="fade-up">
+        <span class="subsubtitle">Pogledaj dolje za svaki parlament popis dokumenata i informacija koji nisu dostupni javnosti.</span>
+      </div>
+    </div>
+    <div class="container flex flex-justify--center flex-align--center flex--column mt36" data-aos="fade-up">
       <div class="tab-wrapper mt24">
         <Tab @click="selected === 1 ? selected = 0 : selected = 1" :active="selected === 1">Predstavnički dom PS BiH</Tab>
         <div class="container mobile-list" :class="{ 'mobile-list--open': selected === 1 }" v-if="selected === 1">

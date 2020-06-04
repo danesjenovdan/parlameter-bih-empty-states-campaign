@@ -1,6 +1,6 @@
 <template>
   <div class="container-c flex flex-justify--center flex-align--center" data-aos="fade-up">
-    <div class="mb16 mt16 flex flex--column flex-align--center flex-justify--center p32">
+    <div class="container mb16 mt16 flex flex--column flex-align--center flex-justify--center p32">
       <span class="title-custom">Potpiši - jer imamo pravo znati </span>
       <ProgressBar :width="count" class="mt16" />
       <div class="flex flex-align--center flex-justify--flex-end counter">
