@@ -147,7 +147,7 @@
     <div id="recite-parlamentima"></div>
     <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</span>
+        <h2 class="mr8 text--uppercase separator__text" href="">Recite PARLAMENTIMA da imamo pravo znati:</h2>
       </div>
     </div>
     <div class="container-c flex flex-justify--center flex-align--center flex--column mt24 mb24" data-aos="fade-up">
@@ -164,8 +164,8 @@
 
     <div class="separator separator--right" data-aos="fade-up">
       <div class="separator__item separator__item--right">
-        <span class="mr8 text--uppercase separator__text"
-          >TRAŽITE POTPUNO OTVARANJE DRŽAVNOG I ENTITETSKIH PARLAMENATA</span
+        <h2 class="mr8 text--uppercase separator__text"
+          >TRAŽITE POTPUNO OTVARANJE DRŽAVNOG I ENTITETSKIH PARLAMENATA</h2
         >
       </div>
     </div>
@@ -182,7 +182,7 @@
 
     <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">ZA TRANSPARENTNOST</span>
+        <h2 class="mr8 text--uppercase separator__text">ZA TRANSPARENTNOST</h2>
       </div>
     </div>
 
@@ -215,7 +215,7 @@
     <div id="petition-form"></div>
     <div class="separator separator--left" data-aos="fade-up">
       <div class="separator__item separator__item--left">
-        <span class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</span>
+        <h2 class="mr8 text--uppercase separator__text">POTPIŠITE PETICIJU!</h2>
       </div>
     </div>
   </div>
@@ -269,9 +269,6 @@ export default {
   }
   &__text {
     margin: 10px 20px;
-    @media (max-width: $small) {
-      font-size: 1.3rem;
-    }
   }
   &__item {
     width: 80%;

@@ -20,9 +20,9 @@ export default {
 @import '@/assets/style/variables';
 
 .tab {
-  background-color: #c4cdff;
+  background-color: rgba(119,134,234, 0.2);
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: italic;
   padding: 5px;
   margin-bottom: 5px;
@@ -30,7 +30,6 @@ export default {
   cursor: pointer;
   transition: background-image, 0.2s;
   width: 100%;
-
 
   @media (min-width: $large) {
     margin-left: 5px;

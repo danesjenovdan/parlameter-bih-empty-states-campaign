@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="jumbotron-first flex flex--column flex-justify--center flex-align--center">
-      <div class="container text--center jumbotron-first__title mt32" data-aos="fade-up">
+      <div class="container text--center jumbotron-first__title mt32 text-container" data-aos="fade-up">
         <h1 class="lead text--center">
           Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio" class="black-link">
           <strong>istraživanju otvorenosti</strong></a>
@@ -21,24 +21,32 @@
         </h1>
       </div>
       <div class="container jumbotron-first__card-container-c mt40 mb40">
-        <div class="jumbotron-first__card" data-aos="fade-up">
-          <span class="jumbotron-first__card__title">46 %</span>
-          <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2017</span>
+        <div class="col-lg-4 col-12">
+          <div class="jumbotron-first__card" data-aos="fade-up">
+            <span class="jumbotron-first__card__title">46 %</span>
+            <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2017</span>
+          </div>
         </div>
-        <div class="jumbotron-first__card" data-aos="fade-up">
-          <span class="jumbotron-first__card__title">49 %</span>
-          <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2018</span>
+        <div class="col-lg-4 col-12">
+          <div class="jumbotron-first__card" data-aos="fade-up">
+            <span class="jumbotron-first__card__title">49 %</span>
+            <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2018</span>
+          </div>
         </div>
-        <div class="jumbotron-first__card" data-aos="fade-up">
-          <span class="jumbotron-first__card__title">39 %</span>
-          <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
+        <div class="col-lg-4 col-12">
+          <div class="jumbotron-first__card" data-aos="fade-up">
+            <span class="jumbotron-first__card__title">39 %</span>
+            <span class="jumbotron-first__card__subtitle">Otvorenost parlamenata u BiH 2019</span>
+          </div>
         </div>
       </div>
-      <div class="text--center container mb32" data-aos="fade-up" >
-        <h2 class="text--center">
-          Vrijeme je da <strong>zakonodavne vlasti u BiH</strong> ulože napore kako bi
-          <strong>unaprijedile svoju otvorenost!</strong>
-        </h2>
+      <div class="flex flex-justify--center container mb32 text-container" data-aos="fade-up" >
+        <div class="text--center">
+          <h3 class="">
+            Vrijeme je da <strong>zakonodavne vlasti u BiH</strong> ulože napore kako bi
+            <strong>unaprijedile svoju otvorenost!</strong>
+          </h3>
+        </div>
       </div>
     </div>
     <JumboTwo id="zasto"/>
@@ -135,7 +143,7 @@ export default {
   background-image: linear-gradient(-224deg, #abb4f2 0%, #f1f2fb 100%);
 
   &__card-container-c {
-    width: 40%;
+    width: 65%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
@@ -151,12 +159,12 @@ export default {
     }
 
     @media (min-width: $large) and (max-width: $xlarge) {
-      width: 60%;
+      width: 70%;
     }
   }
 
   &__card {
-    width: 30%;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
@@ -167,8 +175,8 @@ export default {
     padding: 5px;
 
     @media (max-width: $large) {
-      width: 100%;
       margin: 5px;
+      width: 100%;
     }
 
     &__title {
@@ -195,5 +203,24 @@ export default {
 .black-link {
   color: #000;
   text-decoration: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.text-container {
+  width: 50%;
+  @media (max-width: $small) {
+    width: 90%;
+  }
+
+  @media (min-width: $small) and (max-width: $large) {
+    width: 80%;
+  }
+
+  @media (min-width: $large) and (max-width: $xlarge) {
+    width: 70%;
+  }
 }
 </style>
