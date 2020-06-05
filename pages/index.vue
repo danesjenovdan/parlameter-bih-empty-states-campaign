@@ -2,7 +2,9 @@
   <div class="container-main">
     <div class="container header flex flex-justify--space-evenly flex-align--center mt4" >
       <div class="header__container flex flex-justify--space-between flex-align--center">
-        <img class="header__logo" src="@/assets/svg/logo.svg" />
+        <a href="https://ba.parlameter.si" target="_blank">
+          <img class="header__logo" src="@/assets/svg/logo.svg" />
+        </a>
         <div class="header__texts flex flex-justify--space-between">
           <a href="#zasto" class="link header-link">Zašto?</a>
           <a href="#koji-podaci" class="link header-link">Što?</a>

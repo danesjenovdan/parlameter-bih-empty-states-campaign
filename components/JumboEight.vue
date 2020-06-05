@@ -3,10 +3,10 @@
     <div class="flex flex--column flex-justify--center flex-align--center">
       <span>Pripremili</span>
       <div class="flex flex-justify--space-evenly flex-align--center mt8 img-container">
-        <a href="https://danesjenovdan.si/">
+        <a href="https://danesjenovdan.si/" target="_blank">
           <img src="@/assets/img/logo1.png" class="mr16 dnjd">
         </a>
-        <a href="https://zastone.ba/">
+        <a href="https://zastone.ba/" target="_blank">
           <img src="@/assets/img/logo2.png" class="ml16 zastone">
         </a>
       </div>
@@ -14,7 +14,7 @@
     <div class="flex flex--column flex-justify--center flex-align--center img-wrapper">
       <span>Zahvaljujući podršci</span>
       <div class="flex flex-justify--space-evenly mt8 img-container">
-        <a href="https://www.ned.org/">
+        <a href="https://www.ned.org/" target="_blank">
           <img src="@/assets/img/logo3.png" class="logo3">
         </a>
       </div>
