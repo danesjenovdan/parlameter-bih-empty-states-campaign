@@ -31,7 +31,7 @@
       openFb() {
         const title = 'Otvorite parlamente jer imamo pravo znati'
         const body = 'Potpiši za otvaranje Parlamentarne skupštini Bosne i Hercegovine, Parlamenta Federacije BiH i Narodne skupštine Republike Srpske.'
-        const url = `https://www.facebook.com/dialog/feed?app_id=217978989255065&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}&quote=${body}`
+        const url = `https://www.facebook.com/dialog/feed?app_id=783085488892649&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}&quote=${body}`
         window.open(url, '_blank')
       },
       openTwitter() {

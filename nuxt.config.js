@@ -70,5 +70,6 @@ export default {
     extend (config, ctx) {
     }
   },
-  modern: true
+  modern: true,
+  router: { base: '/otvaranje-parlamenata/' },
 }
