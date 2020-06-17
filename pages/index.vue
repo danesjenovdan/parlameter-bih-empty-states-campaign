@@ -19,7 +19,7 @@
           Prema <a href="http://www.otvoreneinstitucije.cdtmn.org/index.php#portfolio" class="black-link">
           <strong>istraživanju otvorenosti</strong></a>
           institucija zakonodavne vlasti u regionu,
-          Parlamenti u BiH zauzimaju posljednje mjesto.
+          parlamenti u BiH zauzimaju posljednje mjesto.
         </h1>
       </div>
       <div class="container jumbotron-first__card-container-c mt40 mb40">

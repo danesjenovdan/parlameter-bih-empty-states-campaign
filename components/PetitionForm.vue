@@ -56,7 +56,7 @@
           </div>
 
           <span class="additional-data text--italic"
-            >* Ime i prezime tražimo isključivo u svrhu podrške zahtjevima za otvaranje Sabora i ne objavljujemo ih bez
+            >* Ime i prezime tražimo isključivo u svrhu podrške zahtjevima za otvaranje parlamenata i ne objavljujemo ih bez
             privole niti u bilo koje druge svrhe.</span
           >
           <br /><span class="additional-data text--italic"
