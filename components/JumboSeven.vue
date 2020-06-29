@@ -30,7 +30,7 @@
     methods: {
       openFb() {
         const title = 'Otvorite parlamente jer imamo pravo znati'
-        const body = 'Podpiši za otvaranje Parlamentarne skupštini Bosne i Hercegovine, Parlamenta Federacije BiH i Narodne skupštine Republike Srpske.'
+        const body = 'Potpiši za otvaranje Parlamentarne skupštini Bosne i Hercegovine, Parlamenta Federacije BiH i Narodne skupštine Republike Srpske.'
         const url = `https://www.facebook.com/dialog/feed?app_id=217978989255065&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}&quote=${body}`
         window.open(url, '_blank')
       },
@@ -40,7 +40,7 @@
         window.open(url, '_blank')
       },
       openMail() {
-        const title = 'Podpiši za otvaranje parlamenata'
+        const title = 'Potpiši za otvaranje parlamenata'
         const body = 'Recite Parlamentarnoj skupštini Bosne i Hercegovine, Parlamentu Federacije BiH i Narodnoj skupštini Republike Srpske da je važno da otvore svoje podatke tako da budu što brže dostupni i spremni za korištenje.'
         const url = `mailto:?subject=${encodeURIComponent(title)}&body=${body} ${encodeURIComponent(document.location.href)}`
         window.open(url, '_blank')

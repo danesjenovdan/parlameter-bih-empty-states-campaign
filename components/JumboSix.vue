@@ -10,7 +10,7 @@
         </span>
       </div>
       <div class="button-wrapper" v-if="$store.state.totalSignatureCount > 20">
-        <button  v-if="!showAll" class="text--uppercase" @click="showAll = true">Prikaži svih {{ $store.state.totalSignatureCount }} podpisa</button>
+        <button  v-if="!showAll" class="text--uppercase" @click="showAll = true">Prikaži svih {{ $store.state.totalSignatureCount }} potpisa</button>
       </div>
     </div>
   </div>
