@@ -2,10 +2,10 @@
   <div class="container-c flex flex-justify--center flex-align--center" data-aos="fade-up">
     <div class="container mb16 mt16 flex flex--column flex-align--center flex-justify--center p32">
       <span class="title-custom">Potpiši - jer imamo pravo znati </span>
-      <ProgressBar :width="count" class="mt16" />
+      <!-- <ProgressBar :width="count" class="mt16" />
       <div class="flex flex-align--center flex-justify--flex-end counter">
         <span>{{ $store.state.totalSignatureCount }} / 15000</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
